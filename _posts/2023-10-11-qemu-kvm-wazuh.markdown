@@ -111,15 +111,18 @@ When you login the wazuh you should see this page first. Then I added agent in m
 
 Now, I attack RDP brute force with hydra and crowbar.  
 
-Note: Don't forget the install crowbar with this [github link](https://github.com/galkan/crowbar) but ,if you want to use hydra you can find that on the repository.
+Note: Don't forget the install crowbar with this [github link](https://github.com/galkan/crowbar) but ,if you want to use hydra you can find that on the repository.  
+So first step is finding the RDP port for target machine.(Default 3389)  
+
+![nmap](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/929d3e72-3093-4a13-9021-450a51d00e0a)
+
+We saw the port and ip. After that I started the attack.  
 
 ![2023-10-10_18-49](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/4d15f453-4764-4af4-b632-5b10f171acc0)
 
 ![2023-10-10_18-59](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/767b9011-5db8-4580-9d60-1f0b08391bd0)
 
-
-
-Now let's go back the wazuh and inspect the attack
+Now let's go back the wazuh and inspect the attack.(I'm doing all this in my virtual network)  
 
 ![2023-10-11_13-00](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0f356eb0-e08a-4371-89e9-b25c38fbc77c)
 
@@ -141,4 +144,14 @@ So what is 4624 and 4625?
 - 4625 means a failed login attempt.  
 
 You can see the detail of this log in the picture below.
+
+![captures2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/f5c17b6f-3bf8-4f46-91e9-3367d39b0ee0)
+
+The image snippet above can be very useful.  
+Logon Type: It shows how to user attempted the log in. It's 5 so that means this user log in as a service.  
+
+
+![captures3](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/7a8cc711-9662-4528-8e0d-04d50c6fc751)
+
+
 

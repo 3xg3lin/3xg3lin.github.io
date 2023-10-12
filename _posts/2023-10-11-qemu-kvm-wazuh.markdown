@@ -131,5 +131,12 @@ We can idenify [brute force attack for windows machine](https://documentation.wa
 > rule.id:(60204) indicates multiple login failures
 
 Ok, so what is level?  
-Before we explain the level we should look first Windows logs.
+Before we explain the level we should look first Windows logs.  
 
+![captures1](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/6ae886d8-69e9-4d10-bf4c-3e83e0cba219)
+
+To detect RDP brute force attacks, we should check for event IDs 4624 and 4625.  
+So what is 4624 and 4625?  
+> 4624 is represents a successful login to an account.
+> 4625 means a failed login attempt.
+You can see the detail of this log in the picture below.

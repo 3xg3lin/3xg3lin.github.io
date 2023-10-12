@@ -139,7 +139,13 @@ We can idenify [brute force attack for windows machine](https://documentation.wa
 - rule.id:(60106) if login is successful
 
 Ok, so what is level?  
-Before we explain the level we should look first Windows logs.  
+[Level](https://documentation.wazuh.com/current/user-manual/ruleset/rules-classification.html) specifies the severity level of each triggered warning.  
+- rule.level:(3) indicates successful login attempts
+- rule.level:(5) means an error occurred by the user himself
+- rule.level:(9) indicates login attempt from unknown user
+- rule.level:(10) indicates multiple failed login attempts
+ 
+We can look Windows logs too. 
 
 ![captures1](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/6ae886d8-69e9-4d10-bf4c-3e83e0cba219)
 

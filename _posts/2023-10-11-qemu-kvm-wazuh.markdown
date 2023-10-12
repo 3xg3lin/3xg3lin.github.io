@@ -136,6 +136,7 @@ So What is id and level?
 We can idenify [brute force attack for windows machine](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-brute-force-attack.html) with 2 ids.  
 - rule.id:(60122) indicates login failures  
 - rule.id:(60204) indicates multiple login failures
+- rule.id:(60106) if login is successful
 
 Ok, so what is level?  
 Before we explain the level we should look first Windows logs.  

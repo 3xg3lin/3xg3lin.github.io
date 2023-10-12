@@ -112,6 +112,7 @@ When you login the wazuh you should see this page first. Then I added agent in m
 Now, I attack RDP brute force with hydra and crowbar. (I'm doing all this in my virtual network)  
 
 **Note: Don't forget the install crowbar with this [github link](https://github.com/galkan/crowbar) ,but if you want to use hydra you can find that on the repository.**  
+
 So first step is finding the RDP port for target machine.(Default 3389)  
 
 ![nmap](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/929d3e72-3093-4a13-9021-450a51d00e0a)

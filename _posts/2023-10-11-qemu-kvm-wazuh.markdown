@@ -123,5 +123,7 @@ Now let's go back the wazuh and inspect the attack
 
 ![2023-10-11_13-00](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0f356eb0-e08a-4371-89e9-b25c38fbc77c)
 
-you can see the description above
+you can see the description above.
+It says 'User account locked out' and many 'logon failure'.
+
 

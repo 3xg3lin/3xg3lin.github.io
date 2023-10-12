@@ -123,9 +123,9 @@ Now let's go back the wazuh and inspect the attack
 
 ![2023-10-11_13-00](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0f356eb0-e08a-4371-89e9-b25c38fbc77c)
 
-you can see the description above.
-It says 'User account locked out' and many 'logon failure'.
-So What is id and level?
+you can see the description above.  
+It says 'User account locked out' and many 'logon failure'.  
+So What is id and level?  
 We can idenify [brute force attack for windows machine](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-brute-force-attack.html) with 2 ids.  
 > rule.id:(60122) indicates login failures  
 > rule.id:(60204) indicates multiple login failures

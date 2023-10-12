@@ -132,8 +132,8 @@ Now let's go back the wazuh and inspect the attack.
 
 You can see the description above.  
 It says `User account locked out` and many `logon failure`.  
-So What is id and level?  
-We can idenify [brute force attack for windows machine](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-brute-force-attack.html) with 2 ids.  
+So What is **rule.id** and **rule.level**?  
+*rule.id* identifies the alert. It's like a identity. We can define a [brute force attack for a Windows machine](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-brute-force-attack.html) with 2 different ids.  
 - rule.id:(60122) indicates login failures  
 - rule.id:(60204) indicates multiple login failures
 - rule.id:(60106) if login is successful

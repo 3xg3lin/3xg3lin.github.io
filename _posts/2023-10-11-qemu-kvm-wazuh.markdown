@@ -117,8 +117,6 @@ Note: Don't forget the install crowbar with this [github link](https://github.co
 
 ![2023-10-10_18-59](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/c29cef14-5403-487d-9f9a-79f38ee3f2f4)
 
+Now let's go back the wazuh and inspect the attack
 
-
-
-
-
+.

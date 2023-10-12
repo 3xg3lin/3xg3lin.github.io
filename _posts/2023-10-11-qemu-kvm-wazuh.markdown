@@ -101,5 +101,5 @@ After that to find out my admin password I typed this code:
 # tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt
 ```
 Now I navigated the ```https://127.0.0.1/```  
-
-When you login thw wazuh you should see this page first
+![base](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/d8e4cfaf-c425-4db0-b5d1-68051183d551)
+When you login thw wazuh you should see this page first.

@@ -33,7 +33,7 @@ Actually, [Wazuh Installation Guide](https://documentation.wazuh.com/current/ins
 # curl -sO https://packages.wazuh.com/4.5/wazuh-install.sh
 # curl -sO https://packages.wazuh.com/4.5/config.yml
 ```
-I installed this two files on my machine. After that I edited the ``.config.yml``:
+I installed this two files on my machine. After that I edited the `.config.yml`:
 ```
 nodes:
   # Wazuh indexer nodes
@@ -68,11 +68,11 @@ And after that I run the following command:
 ```
 # bash wazuh-install.sh --generate-config-files
 ```
-And I do this with ```--wazuh-indexer``` option:
+And I do this with `--wazuh-indexer` option:
 ```
 # bash wazuh-install.sh --wazuh-indexer node-1
 ```
-Then I set ```--start-cluster```:
+Then I set `--start-cluster`:
 ```
 # bash wazuh-install.sh --start-cluster
 ```
@@ -80,7 +80,7 @@ for learn to admin password I typed the following:
 ```
 # tar -axf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt -O | grep -P "\'admin\'" -A 1
 ```
-After that I replaced with my ```<ADMIN_PASSWORD>```with the password gotten from the previous command output:
+After that I replaced with my `<ADMIN_PASSWORD>` with the password gotten from the previous command output:
 ```
 # curl -k -u admin:<ADMIN_PASSWORD> https://127.0.0.1:9200
 ```
@@ -100,7 +100,7 @@ After that to find out my admin password I typed this code:
 ```
 # tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt
 ```
-Now I navigated the ```https://127.0.0.1/```  
+Now I navigated the `https://127.0.0.1/`  
 
 ![base](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/d8e4cfaf-c425-4db0-b5d1-68051183d551)  
 
@@ -109,11 +109,11 @@ When you login the wazuh you should see this page first. Then I added agent in m
 ![Screenshot-4](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/12c51c73-b0ea-4bc2-b5f0-f6b0c8c06266)
 
 
-Now, I attack RDP brute force with hydra and crowbar. (I'm doing all this in my virtual network)  
+Now, I attack RDP brute force with hydra and crowbar. *(I'm doing all this in my virtual network)* 
 
 **Note: Don't forget the install crowbar with this [github link](https://github.com/galkan/crowbar) ,but if you want to use hydra you can find that on the repository.**  
 
-So first step is finding the RDP port for target machine.(Default 3389)  
+So first step is finding the IP and RDP port for target machine.*(Default 3389)*  
 
 ![nmap](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/929d3e72-3093-4a13-9021-450a51d00e0a)
 

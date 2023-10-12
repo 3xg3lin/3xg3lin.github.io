@@ -116,7 +116,7 @@ So first step is finding the RDP port for target machine.(Default 3389)
 
 ![nmap](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/929d3e72-3093-4a13-9021-450a51d00e0a)
 
-We saw the port and ip. After that I started the attack.  
+We saw the port and ip.(Maybe you want to use netdiscover or another tool. It's up to you.) After that I started the attack.  
 
 ![2023-10-10_18-49](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/4d15f453-4764-4af4-b632-5b10f171acc0)
 

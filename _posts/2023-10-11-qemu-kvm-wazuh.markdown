@@ -26,7 +26,7 @@ We should do a similar instruction for Windows:
     --os-variant win10 \
     --network default
 ```
-If you want the user manuel for this you should check the [rhel website](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/sect-guest_virtual_machine_installation_overview-creating_guests_with_virt_install).  
+If you want the user manuel for this you can check the [rhel website](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/sect-guest_virtual_machine_installation_overview-creating_guests_with_virt_install).  
 Then, we continue the wazuh setup...  
 Actually, [Wazuh Installation Guide](https://documentation.wazuh.com/current/installation-guide/index.html) is easy to use so I followed that installation manuel.  
 ```
@@ -131,7 +131,7 @@ Now let's go back the wazuh and inspect the attack.
 ![2023-10-11_13-00](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0f356eb0-e08a-4371-89e9-b25c38fbc77c)
 
 You can see the description above.  
-It says 'User account locked out' and many 'logon failure'.  
+It says `User account locked out` and many `logon failure`.  
 So What is id and level?  
 We can idenify [brute force attack for windows machine](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-brute-force-attack.html) with 2 ids.  
 - rule.id:(60122) indicates login failures  
@@ -156,4 +156,4 @@ Logon Type: It shows how to user attempted the log in. It's 5 so that means this
 
 ![captures3](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/7a8cc711-9662-4528-8e0d-04d50c6fc751)
 
-For the above image, you can see which user is trying to log in to WorkstationName. And you can see in TargetUserName who trying to log in as. Logon Type is 3, which is the Logon Type used for logging in over the network.  
+For the above image, you can see which user is trying to log in to *WorkstationName*. And you can see in *TargetUserName* who trying to log in as. *LogonType* is 3, which is the Logon Type used for logging in over the network.  

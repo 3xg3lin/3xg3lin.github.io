@@ -115,8 +115,13 @@ Note: Don't forget the install crowbar with this [github link](https://github.co
 
 ![2023-10-10_18-49](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/4d15f453-4764-4af4-b632-5b10f171acc0)
 
-![2023-10-10_18-59](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/c29cef14-5403-487d-9f9a-79f38ee3f2f4)
+![2023-10-10_18-59](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/767b9011-5db8-4580-9d60-1f0b08391bd0)
+
+
 
 Now let's go back the wazuh and inspect the attack
 
-.
+![2023-10-11_13-00](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0f356eb0-e08a-4371-89e9-b25c38fbc77c)
+
+you can see the description above
+

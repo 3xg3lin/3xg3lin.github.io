@@ -133,13 +133,13 @@ Now let's go back the wazuh and inspect the attack.
 You can see the description above.  
 It says `User account locked out` and many `logon failure`.  
 So What is **rule.id** and **rule.level**?  
-*rule.id* identifies the alert. It's like a identity. We can define a [brute force attack for a Windows machine](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-brute-force-attack.html) with 2 different ids.  
+**rule.id** identifies the alert. It's like a identity. We can define a [brute force attack for a Windows machine](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-brute-force-attack.html) with 2 different ids.  
 - rule.id:(60122) indicates login failures  
 - rule.id:(60204) indicates multiple login failures
 - rule.id:(60106) if login is successful
 
-Ok, so what is level?  
-[Level](https://documentation.wazuh.com/current/user-manual/ruleset/rules-classification.html) specifies the severity level of each triggered warning.  
+Ok, so what is **rule.level**?  
+[**rule.level**](https://documentation.wazuh.com/current/user-manual/ruleset/rules-classification.html) specifies the severity level of each triggered warning.  
 - rule.level:(3) indicates successful login attempts
 - rule.level:(5) means an error occurred by the user himself
 - rule.level:(9) indicates login attempt from unknown user

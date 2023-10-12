@@ -127,8 +127,8 @@ You can see the description above.
 It says 'User account locked out' and many 'logon failure'.  
 So What is id and level?  
 We can idenify [brute force attack for windows machine](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-brute-force-attack.html) with 2 ids.  
-> rule.id:(60122) indicates login failures  
-> rule.id:(60204) indicates multiple login failures
+- rule.id:(60122) indicates login failures  
+- rule.id:(60204) indicates multiple login failures
 
 Ok, so what is level?  
 Before we explain the level we should look first Windows logs.  
@@ -137,7 +137,8 @@ Before we explain the level we should look first Windows logs.
 
 To detect RDP brute force attacks, we should check for event IDs 4624 and 4625.  
 So what is 4624 and 4625?  
-> 4624 is represents a successful login to an account.  
-> 4625 means a failed login attempt.  
+- 4624 is represents a successful login to an account.  
+- 4625 means a failed login attempt.  
 
 You can see the detail of this log in the picture below.
+

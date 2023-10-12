@@ -106,7 +106,8 @@ Now I navigated the ```https://127.0.0.1/```
 
 When you login the wazuh you should see this page first. Then I added agent in my Windows machine. You can do this with click 'Deploy new agent' button.
 
-![Screenshot-4](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/3e752b84-fa87-474c-b581-0c5d5660b420)
+![Screenshot-4](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/12c51c73-b0ea-4bc2-b5f0-f6b0c8c06266)
+
 
 Now, I attack RDP brute force with hydra and crowbar  
 

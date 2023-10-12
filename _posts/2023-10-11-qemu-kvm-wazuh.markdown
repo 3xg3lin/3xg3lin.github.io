@@ -26,9 +26,9 @@ We should do a similar instruction for Windows:
     --os-variant win10 \
     --network default
 ```
-Then, we continue the wazuh setup...
-Actually, [Wazuh Installation Guide](https://documentation.wazuh.com/current/installation-guide/index.html) is easy to use so I followed that installation manuel.
-
+If you want the user manuel for this you should check the [rhel website](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/sect-guest_virtual_machine_installation_overview-creating_guests_with_virt_install).  
+Then, we continue the wazuh setup...  
+Actually, [Wazuh Installation Guide](https://documentation.wazuh.com/current/installation-guide/index.html) is easy to use so I followed that installation manuel.  
 ```
 # curl -sO https://packages.wazuh.com/4.5/wazuh-install.sh
 # curl -sO https://packages.wazuh.com/4.5/config.yml

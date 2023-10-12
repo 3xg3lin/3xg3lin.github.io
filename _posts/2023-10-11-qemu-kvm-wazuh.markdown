@@ -109,22 +109,23 @@ When you login the wazuh you should see this page first. Then I added agent in m
 ![Screenshot-4](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/12c51c73-b0ea-4bc2-b5f0-f6b0c8c06266)
 
 
-Now, I attack RDP brute force with hydra and crowbar.  
+Now, I attack RDP brute force with hydra and crowbar. (I'm doing all this in my virtual network)  
 
-Note: Don't forget the install crowbar with this [github link](https://github.com/galkan/crowbar) ,but if you want to use hydra you can find that on the repository.  
+**Note: Don't forget the install crowbar with this [github link](https://github.com/galkan/crowbar) ,but if you want to use hydra you can find that on the repository.**  
 So first step is finding the RDP port for target machine.(Default 3389)  
 
 ![nmap](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/929d3e72-3093-4a13-9021-450a51d00e0a)
 
 We saw the port and IP.  
 - Maybe you want to use netdiscover or another tool. It's up to you.  
+
 After that I started the attack.  
 
 ![2023-10-10_18-49](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/4d15f453-4764-4af4-b632-5b10f171acc0)
 
 ![2023-10-10_18-59](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/767b9011-5db8-4580-9d60-1f0b08391bd0)
 
-Now let's go back the wazuh and inspect the attack.(I'm doing all this in my virtual network)  
+Now let's go back the wazuh and inspect the attack.
 
 ![2023-10-11_13-00](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0f356eb0-e08a-4371-89e9-b25c38fbc77c)
 
@@ -151,7 +152,6 @@ You can see the detail of this log in the picture below.
 
 The image snippet above can be very useful.  
 Logon Type: It shows how to user attempted the log in. It's 5 so that means this user log in as a service.  
-
 
 ![captures3](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/7a8cc711-9662-4528-8e0d-04d50c6fc751)
 

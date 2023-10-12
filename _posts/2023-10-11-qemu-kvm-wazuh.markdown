@@ -162,4 +162,4 @@ Logon Type: It shows how to user attempted the log in. It's 5 so that means this
 
 ![captures3](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/7a8cc711-9662-4528-8e0d-04d50c6fc751)
 
-For the above image, you can see which user is trying to log in to *WorkstationName*. And you can see in *TargetUserName* who trying to log in as. *LogonType* is 3, which is the Logon Type used for logging in over the network.  
+For the above image, you can see which user is trying to log in to **WorkstationName**. And you can see in **TargetUserName** who trying to log in as. **LogonType** is 3, which is the Logon Type used for logging in over the network.  

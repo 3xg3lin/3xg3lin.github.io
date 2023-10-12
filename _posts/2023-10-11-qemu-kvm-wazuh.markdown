@@ -137,6 +137,6 @@ Before we explain the level we should look first Windows logs.
 
 To detect RDP brute force attacks, we should check for event IDs 4624 and 4625.  
 So what is 4624 and 4625?  
-> 4624 is represents a successful login to an account.
+> 4624 is represents a successful login to an account.  
 > 4625 means a failed login attempt.
 You can see the detail of this log in the picture below.

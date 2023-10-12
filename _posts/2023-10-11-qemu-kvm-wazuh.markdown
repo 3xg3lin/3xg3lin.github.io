@@ -108,6 +108,11 @@ When you login the wazuh you should see this page first. Then I added agent in m
 
 ![Screenshot-4](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/3e752b84-fa87-474c-b581-0c5d5660b420)
 
+Now, I attack RDP brute force with hydra and crowbar  
+
+Note: Don't forget the install crowbar with this [github link](https://github.com/galkan/crowbar) but if you want to use hydra you can find that on the repository.
+
+
 
 
 

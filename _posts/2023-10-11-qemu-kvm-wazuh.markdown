@@ -130,6 +130,6 @@ We can idenify [brute force attack for windows machine](https://documentation.wa
 > rule.id:(60122) indicates login failures  
 > rule.id:(60204) indicates multiple login failures
 
-Ok, so what is level?
+Ok, so what is level?  
 Before we explain the level we should look first Windows logs.
 

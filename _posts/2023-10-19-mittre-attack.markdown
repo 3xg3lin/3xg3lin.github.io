@@ -36,3 +36,24 @@ Briefly, this framework is one such tool for individuals, organizations and gove
 Let's try an Operating System Credential Dumping section in the *MITRE ATTA&CK Matrix*.
 
 ![Screenshot_2023-10-20_00-13-28](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/176d7f6d-d567-4514-9854-74437b2dc36c)
+
+Now let's go to the Windows machine and set up the requirements to get ready to receive some credentials.
+
+First of all, you should install one of the mimikatz, bloodhound programs.  
+Or you can do it manually if you have gained a shell in the system.  
+I chose mimikatz (it's optional)  
+Then I ran mimikatz.  
+After then I check the mimikatz is running an administrator with the following code:  
+```
+privilege::debug
+```
+Now I need the dump hash with mimikatz:  
+```
+lsadump::lsa /inject
+lsadump::lsa /patch
+```
+you can use one of the above code.  
+
+![mimikatz](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/47d28277-7210-48f7-94d2-d353d6a79457)
+
+

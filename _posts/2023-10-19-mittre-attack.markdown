@@ -40,7 +40,7 @@ Let's try an Operating System Credential Dumping section in the *MITRE ATTA&CK M
 Now let's go to the Windows machine and set up the requirements to get ready to receive some credentials.
 
 First of all, you should install one of the mimikatz, bloodhound programs.  
-Or you can do it manually if you have gained a shell in the system.  
+Or you can do it manually if you have gained a shell in the system.(click to reach [cheatsheet](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993))  
 I chose mimikatz (it's optional)  
 Then I ran mimikatz.  
 After then I check the mimikatz is running an administrator with the following code:  

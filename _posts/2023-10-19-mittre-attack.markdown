@@ -32,3 +32,6 @@ Some tactics mentioned under the Enterprise matrix are:
 14. **Impact**: Manipulation, interruption or destruction of system and the data inside.
 
 Briefly, this framework is one such tool for individuals, organizations and governments to avoid their systems and networks becoming targets for malicious actors in cyberspace.
+
+Let's try an Operating System Credential Dumping section in the *MITRE ATTA&CK Matrix*.
+

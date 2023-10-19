@@ -35,3 +35,4 @@ Briefly, this framework is one such tool for individuals, organizations and gove
 
 Let's try an Operating System Credential Dumping section in the *MITRE ATTA&CK Matrix*.
 
+![Screenshot_2023-10-20_00-13-28](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/176d7f6d-d567-4514-9854-74437b2dc36c)

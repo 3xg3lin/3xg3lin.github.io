@@ -96,7 +96,7 @@ Let's detail this with the Mitre attack framework...
 There is another term is TTP, what is it?  
 TTP mean **T**actic,**T**echnique and **P**rocedures. TTP helps security teams to detect and mitigate attacks by understanding the way threat actors operate.  
 
-If you scroll down you will see Procedure Examples. This section describes some groups like APT that have attack methods and knowledge.  
+If you scroll down you will see Procedure Examples. This section describes some groups like APT that have attack methods and tactics.  
 
 ![mitre2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/aeee0387-ce72-4579-8bf5-578dac52fc6f)
 

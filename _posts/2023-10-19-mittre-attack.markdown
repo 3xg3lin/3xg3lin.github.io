@@ -105,3 +105,11 @@ And if you little bit down you will see mitigation and detections section for Bl
 ![mitre3](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/4845b11c-b53c-4d10-9c90-3f38c84f6b32)
 
 ![mitre4](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/b906165e-14d2-4d43-8289-6709b6d01f94)
+
+Group section has very important knowledge for TTP analysis like explore hacker group and the way they use to hack.  
+
+![mitre5](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/419d81ac-9a03-4016-a167-f59a687b7c2c)
+
+If you check Software section, you can see a tools used by hacker groups.
+
+![mitre6](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/030cb5eb-dd3a-46c2-a4bb-860bde2232de)

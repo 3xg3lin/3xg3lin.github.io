@@ -84,4 +84,10 @@ Now crack time...
 ![2023-10-20_00-08](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/8781800b-caf1-42d9-93e0-44af40555248)
 
 
-You can see the password next to the hash in the picture above.
+You can see the password next to the hash in the picture above.  
+
+Let's detail this with the Mitre attack framework...
+
+![mitre1](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/add6a6e2-40f0-4451-9bea-c8aeb41ef86e)
+
+You should see some ID starts with T1* ,this means (T)echnique.

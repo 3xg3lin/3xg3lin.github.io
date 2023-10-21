@@ -93,7 +93,15 @@ Let's detail this with the Mitre attack framework...
 - You should see some ID starts with T1* ,this means **T**echnique.  
 - If you visit the tactic section named [Credential Access](https://attack.mitre.org/tactics/TA0006/), you should see ID like TA00*(This means **TA**ctic).  
 
-There is another term is TTP, what is it?
-TTP mean **T**actic,**T**echnique and **P**rocedures. 
-TTP helps security teams to detect and mitigate attacks by understanding the way threat actors operate.  
+There is another term is TTP, what is it?  
+TTP mean **T**actic,**T**echnique and **P**rocedures. TTP helps security teams to detect and mitigate attacks by understanding the way threat actors operate.  
 
+If you scroll down you will see Procedure Examples. This section describes some groups like APT that have attack methods and knowledge.  
+
+![mitre2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/aeee0387-ce72-4579-8bf5-578dac52fc6f)
+
+And if you little bit down you will see mitigation and detections section for Blue Team.  
+
+![mitre3](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/4845b11c-b53c-4d10-9c90-3f38c84f6b32)
+
+![mitre4](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/b906165e-14d2-4d43-8289-6709b6d01f94)

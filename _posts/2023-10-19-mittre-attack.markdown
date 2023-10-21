@@ -90,4 +90,4 @@ Let's detail this with the Mitre attack framework...
 
 ![mitre1](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/add6a6e2-40f0-4451-9bea-c8aeb41ef86e)
 
-You should see some ID starts with T1* ,this means (T)echnique.
+You should see some ID starts with T1* ,this means (T)echnique. If you visit the tactic section named [Credential Access](https://attack.mitre.org/tactics/TA0006/), you should see ID like TA00*(This means (TA)ctic)

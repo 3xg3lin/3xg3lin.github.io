@@ -42,6 +42,19 @@ Wireshark captures and monitors network traffic using promiscuous mode from netw
 ## What we can do with wireshark?  
 Wireshark is a powerful tool used for various purposes. You can use it for troubleshooting web applications (to analyze HTTP traffic between client and server), security analysis (to detect suspicious activity), and even telephony traffic (to analyze VoIP calls and other telephony protocols).  
 
-Let's do some examples with Wireshark and explain some terms...
-1. Brute Force:
+Let's do some examples with Wireshark and explain some terms...  
+First, I setup _vsftpd_ server on my virtual machine.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/3693e132-af13-4c5f-b192-e7b4e3535086)
+Everythink okey.
+
+
+
+
+
+
+
+
+
+
+Brute Force Attack: This attack method that uses trial and error to login pages.
 

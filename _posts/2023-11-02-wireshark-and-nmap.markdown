@@ -54,6 +54,18 @@ We can use Hydra for brute force attack.
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/91bba629-c417-40ea-a754-0be7b54dfff6)  
 Let's observe this with wireshark.  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/3657efc0-6c0d-4223-ab67-e54ba6354323)  
+If you want the see successfully login type following code:  
+`ftp.response.code==230`  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/2c3f95dc-0ae8-4734-af56-b545e8208352)  
+Or incorrect login:  
+`ftp.response.code==530`  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0ee5e4b7-6675-4c52-ae67-c685234519c4)  
+If we want to see all commands sent from the client.  
+`ftp.request.command`  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/67e679a6-69a7-4ae1-831b-3bf24867ad96)
+
+
+
 
 
 

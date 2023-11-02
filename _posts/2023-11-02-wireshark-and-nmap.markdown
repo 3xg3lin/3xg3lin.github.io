@@ -37,8 +37,10 @@ Network Forensic examines the network and the traffic passing through it for sus
 ## So how can we listen to the network?  
 For this we have to use forensic tools such as Wireshark or tcpdump, known as packet sniffers.  
 ## How wireshark works  
-Wireshark monitors network traffic using promiscuous mode.  
-***Note: Promiscuous mode is a mode for a wired NIC (network interface controller) that causes the controller to pass all traffic it receives to the CPU. Thus, you can monitor all traffic without disconnecting from the network.***  
+Wireshark captures and monitors network traffic using promiscuous mode from networks such as Ethernet, wireless, etc.  
+***Note: Promiscuous mode is a mode for a wired NIC (network interface controller) that causes the controller to pass all traffic it receives to the CPU. Thus, in contrast to Monitoring mode, you can monitor all traffic without disconnecting from the network.***  
+## What we can do with wireshark?  
+Wireshark is a powerful tool used for various purposes. You can use it for troubleshooting web applications (to analyze HTTP traffic between client and server), security analysis (to detect suspicious activity), and even telephony traffic (to analyze VoIP calls and other telephony protocols).
 
 
 

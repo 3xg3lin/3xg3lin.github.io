@@ -62,7 +62,12 @@ Or incorrect login:
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0ee5e4b7-6675-4c52-ae67-c685234519c4)  
 If we want to see all commands sent from the client.  
 `ftp.request.command`  
-![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/67e679a6-69a7-4ae1-831b-3bf24867ad96)
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/67e679a6-69a7-4ae1-831b-3bf24867ad96)  
+Maybe we want to see all of this stream. For this select the menu item **Analyze** → **Follow** → **TCP Stream**.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/69c377c8-aef8-402e-b79f-343e0b464448)  
+For see the flow graph. Select the menu item **Statistics** → **Flow Graph**.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0854ff35-5df8-47d5-bb95-29bf8f00b338)  
+
 
 
 

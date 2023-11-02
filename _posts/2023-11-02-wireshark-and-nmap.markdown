@@ -52,7 +52,7 @@ And we can see the output of the nmap scan.
 💡 Tip: The brute force attack method uses trial and error to crack the password.  
 We can use Hydra for brute force attack.  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/91bba629-c417-40ea-a754-0be7b54dfff6)  
-Let's observe this with wireshark.  
+Let's monitor this with wireshark.  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/3657efc0-6c0d-4223-ab67-e54ba6354323)  
 If you want the see successfully login type following code:  
 `ftp.response.code==230`  
@@ -60,7 +60,7 @@ If you want the see successfully login type following code:
 Or incorrect login:  
 `ftp.response.code==530`  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0ee5e4b7-6675-4c52-ae67-c685234519c4)  
-You can reach the [ftp status code here](https://en.wikipedia.org/wiki/List_of_FTP_server_return_codes).
+You can reach the [ftp status code here](https://en.wikipedia.org/wiki/List_of_FTP_server_return_codes).  
 If we want to see all commands sent from the client.  
 `ftp.request.command`  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/67e679a6-69a7-4ae1-831b-3bf24867ad96)  
@@ -68,6 +68,19 @@ Maybe we want to see all of this stream. For this select the menu item **Analyze
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/69c377c8-aef8-402e-b79f-343e0b464448)  
 For see the flow graph. Select the menu item **Statistics** → **Flow Graph**.  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0854ff35-5df8-47d5-bb95-29bf8f00b338)  
+💡 Tip: IP Spoofing is the creation of IP packets with a false source IP address, for the purpose of impersonating another computing system.  
+📝 ***Note: IP spoofing usually prefer with UDP protocol. Because UDP doesn't establish a connection or maintain a session between the sender and receiver like TCP does.***  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/80850b3e-e8a5-4a7b-a126-1522c6728bfa)  
+We can see the nmap output, but one of these outputs is not correct. This is because FTP works with TCP and needs a connection via session. Keep in mind that!  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/b7956013-d6da-41ce-a91d-83d3bc302618)  
+But we can monitor this network traffic.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/03a66288-93d7-42da-a577-dd8105df9661)  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/1afac9c1-ac30-49e4-9f2e-83ce6bd14e81)  
+
+
+
+
+
 
 
 

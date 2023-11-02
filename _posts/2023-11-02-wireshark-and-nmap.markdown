@@ -60,6 +60,7 @@ If you want the see successfully login type following code:
 Or incorrect login:  
 `ftp.response.code==530`  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0ee5e4b7-6675-4c52-ae67-c685234519c4)  
+You can reach the [ftp status code here](https://en.wikipedia.org/wiki/List_of_FTP_server_return_codes).
 If we want to see all commands sent from the client.  
 `ftp.request.command`  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/67e679a6-69a7-4ae1-831b-3bf24867ad96)  

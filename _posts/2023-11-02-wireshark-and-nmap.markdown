@@ -167,6 +167,24 @@ Now let's try a brute force attack on the login page. But first we need to creat
 </html>
 ```  
 💡 Tip: The file name of the above code is welcome.php  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/4787fa7e-f0f6-4ec8-a3b7-6e32f2e2b9a7)  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/e5cb4b87-6805-40c0-af2e-25c9e3c1af44)  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/7ea33895-5085-4d89-8bdb-bc18a93f1bd4)  
+Everythink great!  
+Now let's start a brute force attack using the Burp Suite. First, I captured the request using the Proxy tab, then I sent it to the Intruder tab.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/711dc5bf-5d76-4e1c-b666-878ba6de812e)  
+The attack started.  
+And then I sort by status code to find the http response code 200.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/714096ca-479a-40a4-9ef0-989f3d63f8ea)  
+And finally, let's monitor all this network traffic with wireshark.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/834c44bf-e328-4b8c-a688-d16fee2dbfa2)  
+
+
+
+
+
+
+
 
 
 

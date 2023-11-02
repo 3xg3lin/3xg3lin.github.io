@@ -7,8 +7,10 @@ date: 2023-11-02 16:45:59 +0500
 # <center>**Top 23 Pentesting Tool in 2023**</center>
 | **Tool** | **Short Description** |
 | :---: | :---: |
+| Wireshark: | Wireshark is a network packet analyzer. |
 | Metasploit: | Essentially, metasploit helps the pentesting team to search for vulnerabilities in the network. |
 | Burp Suite: | Burp Suite is integrated platform for performing security testing of web applications. (Alternative OWASP ZAP) |
+| Nmap: | **N**etwork **Map**per is the most famous scanning tool used by penetration testers. |
 | Sqlmap: | Sqlmap automates the process of detecting and exploiting SQL injection and comes with a very powerful detection engine. |
 | Intruder: | Intruder is a cloud-based software designed to help businesses automatically perform security scans to identify and remediate potential threats. |
 | Nessus: | Nessus is a platform for scanning vulnerability in devices, applications, operating systems and cloud security. |

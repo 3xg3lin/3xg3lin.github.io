@@ -35,7 +35,7 @@ date: 2023-11-02 16:45:59 +0500
 Network Forensic examines the network and the traffic passing through it for suspicious activity.  
 ***NOTE: Network Forensic not only covers the TCP/IP network protocol but also the GSM network.***  
 ## So how can we listen to the network?  
-For this we have to use forensic tools such as Wireshark or tcpdump, known as packet sniffers.  
+For this we have to use forensic tools such as Wireshark or tcpdump, known as network sniffers.  
 ## How wireshark works  
 Wireshark captures and monitors network traffic using promiscuous mode from networks such as Ethernet, wireless, etc.  
 ***Note: Promiscuous mode is a mode for a wired NIC (network interface controller) that causes the controller to pass all traffic it receives to the CPU. Thus, in contrast to Monitoring mode, you can monitor all traffic without disconnecting from the network.***  

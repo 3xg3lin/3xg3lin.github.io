@@ -45,8 +45,13 @@ Wireshark is a powerful tool used for various purposes. You can use it for troub
 <ins>Let's do some examples with Wireshark and explain some terms...</ins>  
 First, I setup _vsftpd_ server on my virtual machine.  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/3693e132-af13-4c5f-b192-e7b4e3535086)  
-Everythink okey.
-💡 Tip: FTP (File Transfer Protocol) is used to communicate and transfer files between computers on a TCP/IP (Transmission Control Protocol/Internet Protocol) network, aka the internet.
+Everythink okey.  
+💡 Tip: FTP (File Transfer Protocol) is used to communicate and transfer files between computers on a TCP/IP (Transmission Control Protocol/Internet Protocol) network, aka the internet.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/cd9d249a-2e2e-4ec8-91e8-02eae9c3a595)  
+And we can see the output of the nmap scan.  
+💡 Tip: Brute Force Attack: This attack method that uses trial and error to login pages.  
+Let's observe this with wireshark.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/3657efc0-6c0d-4223-ab67-e54ba6354323)  
 
 
 
@@ -55,5 +60,8 @@ Everythink okey.
 
 
 
-💡 Tip: Brute Force Attack: This attack method that uses trial and error to login pages.
+
+
+
+
 

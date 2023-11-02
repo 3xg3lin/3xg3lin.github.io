@@ -33,12 +33,12 @@ date: 2023-11-02 16:45:59 +0500
 
 ## What is Network Forensic?  
 Network Forensic examines the network and the traffic passing through it for suspicious activity.  
-***NOTE: Network Forensic not only covers the TCP/IP network protocol but also the GSM network.***  
+📝 ***NOTE: Network Forensic not only covers the TCP/IP network protocol but also the GSM network.***  
 ## So how can we listen to the network?  
 For this we have to use forensic tools such as Wireshark or tcpdump, known as network sniffers.  
 ## How wireshark works  
 Wireshark captures and monitors network traffic using promiscuous mode from networks such as Ethernet, wireless, etc.  
-***Note: Promiscuous mode is a mode for a wired NIC (network interface controller) that causes the controller to pass all traffic it receives to the CPU. Thus, in contrast to Monitoring mode, you can monitor all traffic without disconnecting from the network.***  
+📝 ***Note: Promiscuous mode is a mode for a wired NIC (network interface controller) that causes the controller to pass all traffic it receives to the CPU. Thus, in contrast to Monitoring mode, you can monitor all traffic without disconnecting from the network.***  
 ## What we can do with wireshark?  
 Wireshark is a powerful tool used for various purposes. You can use it for troubleshooting web applications (to analyze HTTP traffic between client and server), security analysis (to detect suspicious activity), and even telephony traffic (to analyze VoIP calls and other telephony protocols).  
 
@@ -46,7 +46,7 @@ Wireshark is a powerful tool used for various purposes. You can use it for troub
 First, I setup _vsftpd_ server on my virtual machine.  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/3693e132-af13-4c5f-b192-e7b4e3535086)  
 Everythink okey.
-- FTP (File Transfer Protocol) is used to communicate and transfer files between computers on a TCP/IP (Transmission Control Protocol/Internet Protocol) network, aka the internet.
+💡 Tip: FTP (File Transfer Protocol) is used to communicate and transfer files between computers on a TCP/IP (Transmission Control Protocol/Internet Protocol) network, aka the internet.
 
 
 
@@ -55,6 +55,5 @@ Everythink okey.
 
 
 
-
-- Brute Force Attack: This attack method that uses trial and error to login pages.
+💡 Tip: Brute Force Attack: This attack method that uses trial and error to login pages.
 

@@ -41,3 +41,4 @@ Wireshark monitors network traffic using promiscuous mode.
 ***Note: Promiscuous mode is a mode for a wired NIC (network interface controller) that causes the controller to pass all traffic it receives to the CPU. Thus, you can monitor all traffic without disconnecting from the network.***  
 
 
+

@@ -114,8 +114,59 @@ Of course we can also see the HTTP Stream. Select the menu item **Analyze** → 
 Now type `http.response.code==200` for listing all available pages.  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/160e3cde-ef76-4f29-8d3b-6c945dd57be9)  
 
+Now let's try a brute force attack on the login page. But first we need to create a login page. I ask chatgpt to help me with this.  
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login Page</h1>
 
+    <form method="post" action="welcome.php">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
 
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Login">
+        
+	<p id="error-message" style="color: red;"><?php echo isset($_GET["error"]) ? $_GET["error"] : ""; ?></p>
+	
+    </form>
+</body>
+</html>
+```  
+💡 Tip: The file name of the code above is login.html  
+```  
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+</head>
+<body>
+    <h1>Welcome Page</h1>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+
+        // Check if the provided username and password are correct
+        if ($username === "test" && $password === "test") {
+            echo "Logged in successfully";
+        } else {
+		header("Location: login.html?error=Invalid%20password");
+            exit;
+        }
+    }
+    ?>
+</body>
+</html>
+```  
+💡 Tip: The file name of the above code is welcome.php  
 
 
 

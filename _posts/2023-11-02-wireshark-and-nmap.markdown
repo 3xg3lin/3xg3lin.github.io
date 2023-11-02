@@ -31,3 +31,12 @@ date: 2023-11-02 16:45:59 +0500
 | DNSdumpster: | DNSdumpster is an online passive scanning tool to obtain all kinds of DNS related information. |
 | Hunter: | Hunter ,email outreach platform, works by scraping the internet for results that contain the email you're looking for. |
 | URL Fuzzer: | The URL Fuzzer uses a custom-built wordlist for discovering hidden files and directories. |
+
+## What is Network Forensic?  
+Network Forensic examines the network and the traffic passing through it for suspicious activity.  
+***NOTE: Network Forensic not only covers the TCP/IP network protocol but also the GSM network.***  
+## So how can we listen to the network?  
+For this we have to use forensic tools such as Wireshark or tcpdump, known as packet sniffers.  
+## How wireshark works  
+Wireshark monitors network traffic using promiscuous mode.
+

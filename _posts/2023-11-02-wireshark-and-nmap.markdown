@@ -180,26 +180,3 @@ And finally, let's monitor all this network traffic with wireshark.
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/834c44bf-e328-4b8c-a688-d16fee2dbfa2)  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

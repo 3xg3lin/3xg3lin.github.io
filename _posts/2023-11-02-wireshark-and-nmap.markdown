@@ -77,6 +77,36 @@ But we can monitor this network traffic.
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/03a66288-93d7-42da-a577-dd8105df9661)  
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/1afac9c1-ac30-49e4-9f2e-83ce6bd14e81)  
 
+Let's check how secure the vpn is...  
+📝 ***Note: We use VPNs to protect against hackers during public Wi-Fi connections. The biggest problem is the possibility of data leaking out. One of this leak is WebRTC leaks,DNS leaks and IP address leaks.  
+💡 Tip: WebRTC enables real-time communication for web browsers and mobile applications, such as sending audio, video or general data. So it can reveal the IP address of the end user.  
+💡 Tip: DNS returns an IP address and IP addresses can be monitored if there is a DNS leak.  
+After connecting to the VPN, wireshark looks like this:  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/6a27c7d8-2742-459a-95c2-0eed5af815a6)  
+And then I navigate around.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/c61b1437-c752-48bf-ba35-8d071ccdc040)  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/b77802ee-2bff-4561-a47c-1c84740e4c2c)  
+So let's try to monitor these pages.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/c43f5d29-7cd5-4ff1-add8-b554b1bb6f75)  
+There's nothing!  
+Let's try for DNS too...  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/743ffaf5-e33e-4c25-b88c-602672fae411)  
+Still nothing.  
+Finally, try to observe our public IP.  
+📝 ***Note: You can see the public IP address on your terminal using the code below or type "What is my public IP address" in your browser.***  
+```
+$ curl ifconfig.co
+$ curl ifconfig.me
+$ curl icanhazip.com
+```  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/fb9a9365-db80-4d29-8bac-918a55dccf18)  
+And still nothing.  
+
+
+
+
+
+
 
 
 

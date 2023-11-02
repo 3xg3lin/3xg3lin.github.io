@@ -102,11 +102,17 @@ $ curl icanhazip.com
 ![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/fb9a9365-db80-4d29-8bac-918a55dccf18)  
 And still nothing.  
 
-
-
-
-
-
+Now we will use dirb. For this I first start the apache server in my virtual machine.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/bdb46192-ef8f-4a9e-b971-753b7367071d)  
+Now select the menu item **Statistics** → **HTTP** → **Packet Counter**  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/b9c2dace-4757-4c55-938d-a65c0dc85b88)  
+We can see all HTTP request method is "GET".  
+If we want to list all directory and folder request from the client. Select the menu item **Statistics** → **HTTP** → **Requests**  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/e0d00819-e594-4d60-a377-dc484d213f79)  
+Of course we can also see the HTTP Stream. Select the menu item **Analyze** → **Follow** → **HTTP Stream**  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/1fa1cdfd-fcb5-4d7b-86a2-0a0fcf294f39)  
+Now type `http.response.code==200` for listing all available pages.  
+![image](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/160e3cde-ef76-4f29-8d3b-6c945dd57be9)  
 
 
 

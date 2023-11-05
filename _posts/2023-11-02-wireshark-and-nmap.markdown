@@ -199,14 +199,24 @@ If this confuses you. You can check the Flow Graph.
 This perspective makes it more understandable what happens during a TCP/SYN scan.  
 
 So, how OS detection with nmap?  
-Basically, nmap checks how they respond to a TCP/IP packet. And it creates a nmap TCP/IP fingerprint. Then nmap checks this fingerprint against its own database.  
+Basically, nmap checks how they respond to a TCP/IP packet. And it creates a nmap [TCP/IP fingerprint](https://nmap.org/book/osdetect-fingerprint-format.html). Then nmap checks this fingerprint against its own database.  
 If I scan for OS detection on my virtual system using `nmap -O 192.168.122.1/24`.  
 ![OS](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/74c6655f-2747-463b-b5a1-f84c6b99f501)  
 📝 ***Note: This scan returns me fingerprint because this is virtual machine.***  
 
 ![nmapscann](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/76bc0a3d-150c-41fc-84ca-aa7c7c15b832)  
 * --mtu(**M**aximum **T**ransmission **U**nit): We use this option to split the TCP header into small packets.
-![mtuwireshark](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/438dd01c-a153-4614-b0a5-0c2d8362aabc)
+
+![mtuwireshark](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/438dd01c-a153-4614-b0a5-0c2d8362aabc)  
+Now talk about NSE... What is it?  
+The **N**map **S**cripting **E**ngine (NSE) is one of nmap's most powerful features. NSE allows you to write a simple script to use in your nmap scan. 
+![nse](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/15da5992-7058-4977-96b4-fc326e4658ec)  
+We used the [auth NSE category](https://nmap.org/nsedoc/categories/auth.html) in nmap.  
+* --script: We can use it to scan with one or more scripts. In the example above we used it with the vuln category but we can also do it with `ftp-anon.nse`.  
+
+![ftpanon](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/00c84c42-79e8-4c2d-a4d8-4f664e63fb30)  
+You can find all NSE categories [here](https://nmap.org/nsedoc/categories/).  
+
 
 
 

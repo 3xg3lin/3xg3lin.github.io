@@ -205,11 +205,12 @@ If I scan for OS detection on my virtual system using `nmap -O 192.168.122.1/24`
 📝 ***Note: This scan returns me fingerprint because this is virtual machine.***  
 
 ![nmapscann](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/76bc0a3d-150c-41fc-84ca-aa7c7c15b832)  
-* --mtu(**M**aximum **T**ransmission **U**nit): We use this option to split the TCP header into small packets.
+* --mtu(**M**aximum **T**ransmission **U**nit): We use this option to split the TCP header into small packets.  
 
 ![mtuwireshark](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/438dd01c-a153-4614-b0a5-0c2d8362aabc)  
 Now talk about NSE... What is it?  
 The **N**map **S**cripting **E**ngine (NSE) is one of nmap's most powerful features. NSE allows you to write a simple script to use in your nmap scan. 
+
 ![nse](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/15da5992-7058-4977-96b4-fc326e4658ec)  
 We used the [auth NSE category](https://nmap.org/nsedoc/categories/auth.html) in nmap.  
 * --script: We can use it to scan with one or more scripts. In the example above we used it with the vuln category but we can also do it with `ftp-anon.nse`.  
@@ -217,8 +218,17 @@ We used the [auth NSE category](https://nmap.org/nsedoc/categories/auth.html) in
 ![ftpanon](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/00c84c42-79e8-4c2d-a4d8-4f664e63fb30)  
 You can find all NSE categories [here](https://nmap.org/nsedoc/categories/).  
 
-
-
-
-
-
+Sometimes we want to save this output, if we want to do it in xml format then we can use the `-oX` option.  
+![xmlformat](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/7add2ba1-9ab6-4133-95e9-9cb7fd7d0d3b)  
+The output will look like this...  
+![nsexml](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/17fa1b79-65e3-4a1b-964e-bc1c5ac54d80)  
+Of course you may want to use another output option such as `-oN`.  
+📝 ***Note: However, if you want to use the ndiff tool, you should use the xml format.***  
+## What is ndiff?  
+Ndiff helps to compare two nmap scans. It takes two Nmap XML output files and prints the differences between them.  
+I will show you with zenmap but you can also use it with the command line.([Here is the ndiff guide.](https://nmap.org/book/ndiff-man.html))  
+📝 ***Note: Zenmap is the GUI for Nmap.***  
+![ndiff](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/eca7354d-3dd2-40ca-b0d5-622988132d4f)  
+💡Tip: `-` means that the line was in the first scan but not in the second.  
+💡Tip: `+` means it was in the second but not the first.  
+💡Tip: If it is blank, it means that nothing has changed.  

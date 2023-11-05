@@ -181,7 +181,7 @@ And finally, let's monitor all this network traffic with wireshark.
 
 ## What is nmap?
 Nmap stands for network mapper. Nmap is used to discover hosts and services on a computer network. Also ,it is an open source.  
-Let's start with Tcp Syn and then explain.  
+Let's start with TCP SYN and then explain.  
 ![nmap](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/025af5ec-fb60-41e7-bad1-c2f2dcc875c0)  
 We can observe this on wireshark.  
 ![nmap-sS](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/35730b5f-b097-4f3d-b5b0-8eed10c1a026)  
@@ -193,8 +193,22 @@ The following line explains these options:
 * -p: This option specifies which ports you want to scan. You can use it like 1-1111 to scan from 1 to 1111(e.g. nmap -p 1-1111 192.168.122.212)
 
 ![wireshark](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/c4b2cca2-fd47-4401-b375-5ff791c1a096)  
+![wireshark2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/f93925fc-656a-41f1-a6c1-5b41d0c572fd)  
+If this confuses you. You can check the Flow Graph.  
+![flowwireshark](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/1a9f34f9-2b9c-4212-808d-b04dacae4369)  
 This perspective makes it more understandable what happens during a TCP/SYN scan.  
 
 So, how OS detection with nmap?  
+Basically, nmap checks how they respond to a TCP/IP packet. And it creates a nmap TCP/IP fingerprint. Then nmap checks this fingerprint against its own database.  
+If I scan for OS detection on my virtual system using `nmap -O 192.168.122.1/24`.  
+![OS](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/74c6655f-2747-463b-b5a1-f84c6b99f501)  
+📝 ***Note: This scan returns me fingerprint because this is virtual machine.***  
+
+![nmapscann](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/76bc0a3d-150c-41fc-84ca-aa7c7c15b832)  
+* --mtu(**M**aximum **T**ransmission **U**nit): We use this option to split the TCP header into small packets.
+![mtuwireshark](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/438dd01c-a153-4614-b0a5-0c2d8362aabc)
+
+
+
 
 

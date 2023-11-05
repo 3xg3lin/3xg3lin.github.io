@@ -181,4 +181,20 @@ And finally, let's monitor all this network traffic with wireshark.
 
 ## What is nmap?
 Nmap stands for network mapper. Nmap is used to discover hosts and services on a computer network. Also ,it is an open source.  
+Let's start with Tcp Syn and then explain.  
+![nmap](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/025af5ec-fb60-41e7-bad1-c2f2dcc875c0)  
+We can observe this on wireshark.  
+![nmap-sS](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/35730b5f-b097-4f3d-b5b0-8eed10c1a026)  
+The [Nmap TCP SYN scan](https://nmap.org/book/synscan.html) starts by sending a TCP packet with the SYN flag set. Then it waits for a reply packet with SYN/ACK flags set. If it receives a packet with the SYN/ACK flags set, it sends a packet with the RST flag set. And ends the connection.  
+Let's do it with another example for clarity.  
+![nmapscan](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/6589d6f0-c405-4a33-9980-7ca06b90c755)  
+The following line explains these options:  
+* -r: By default, Nmap randomizes the scanned port order. This option is used for sequential port scanning order.  
+* -p: This option specifies which ports you want to scan. You can use it like 1-1111 to scan from 1 to 1111(e.g. nmap -p 1-1111 192.168.122.212)
+
+![wireshark](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/c4b2cca2-fd47-4401-b375-5ff791c1a096)  
+This perspective makes it more understandable what happens during a TCP/SYN scan.  
+
+So, how OS detection with nmap?  
+
 

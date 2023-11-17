@@ -72,7 +72,7 @@ Here we can see the user's relative identifier (RID), the user's login count, la
 ![RECENTFILES](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/9244e8d2-f014-430d-a0eb-79a984c70a42)  
 
 ### Recent Files  
-Windows maintains a list of recently opened files for each user. 
+Windows maintains a list of recently opened files for each user. This information is stored in `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs`.
 
 
 

@@ -77,5 +77,5 @@ Windows maintains a list of recently opened files for each user. This informatio
 We can also look at the UserAssist location.  
 ![userassist](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/35d42a8f-3e73-46f9-b3cc-a429a90ff978)  
 
-We mentioned UserAssist above.
 
+We mentioned UserAssist above. We can see the time when the application was started.

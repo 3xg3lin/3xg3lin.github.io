@@ -61,4 +61,17 @@ The following locations keep a record of USB keys plugged into a system. These l
 - `SYSTEM\CurrentControlSet\Enum\USBSTOR`
 - `SYSTEM\CurrentControlSet\Enum\USB`  
 
+Now let's give some examples.  
+💡 Tip: I used Eric Zimmerman's Registry Explorer tool for this investigation.  
+
+First I examining `SAM` File.  
+![SAM](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/903080e4-0466-4e58-a175-76350dda582c)  
+
+Here we can see the user's relative identifier (RID), the user's login count, last login time, last failed login, last password change, password expiration, password policy and password hint, and the groups the user is part of.  
+
+![RECENTFILES](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/9244e8d2-f014-430d-a0eb-79a984c70a42)
+
+
+
+
 

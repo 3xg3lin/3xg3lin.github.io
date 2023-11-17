@@ -31,7 +31,7 @@ A **Registry Hive** is a group of Keys, subkeys and values stored in a single fi
 If you want to know what all this section above means, you can check this [site](https://learn.microsoft.com/en-US/troubleshoot/windows-server/performance/windows-registry-advanced-users).
 Up to this point, if you are in the live system, you can do all of this. But what if you are not?  
 
-:memo: **Note:In that case we assume you have a disk image for sure**  
+ 📝 **Note:In that case we assume you have a disk image for sure**  
 
 The majority of these hives are located in the `C:\Windows\system32\config` directory and are:
 - DEFAULT (mounted on `HKEY_USERS\DEFAULT`) 

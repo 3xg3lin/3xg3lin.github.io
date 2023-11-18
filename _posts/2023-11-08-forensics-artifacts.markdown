@@ -8,10 +8,10 @@ date: 2023-11-08 16:45:59 +0600
 DFIR stands for Digital Forensics and Incident Response. This area covers the collection of forensic artifacts and helps Security Experts identify footprints left by an attacker.  
 
 ## What is Artifacts?  
-📝 **Note:Forensic artifacts are important pieces of information about human activity.**
+📝 **Note:Forensic artifacts are important pieces of information about human activity.**  
 In computer forensics, these artifacts are pieces of evidence that point to an activity performed on a system.  
 ## So, the artifacts actually is evidence relevant to the investigation?  
-No, it may or may not be related to the investigation. 
+No, it may or may not be related to the investigation.  
 ## How???  
 Briefly, artifacts are objects that have a forensic value. We actually collect artifacts to support a hypothesis or claim about the attacker's activity. For example, at a crime scene, fingerprints, a broken button on a jacket are artifacts. In a Windows system, a person's actions can be traced quite accurately using forensics because of the various artifacts that a Windows system creates for a particular activity.  
 

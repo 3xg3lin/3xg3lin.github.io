@@ -10,10 +10,12 @@ DFIR stands for Digital Forensics and Incident Response. This area covers the co
 ## What is Artifacts?  
 📝 **Note:Forensic artifacts are important pieces of information about human activity.**  
 In computer forensics, these artifacts are pieces of evidence that point to an activity performed on a system.  
+
 ## So, the artifacts actually is evidence relevant to the investigation?  
 No, it may or may not be related to the investigation.  
+
 ## How???  
-Briefly, artifacts are objects that have a forensic value. We actually collect artifacts to support a hypothesis or claim about the attacker's activity. For example, at a crime scene, fingerprints, a broken button on a jacket are artifacts. In a Windows system, a person's actions can be traced quite accurately using forensics because of the various artifacts that a Windows system creates for a particular activity.  
+Briefly, artifacts are objects that have a forensic value. It can be any object that contains some data or evidence of something that happened. We actually collect artifacts to support a hypothesis or claim about the attacker's activity. For example, at a crime scene, fingerprints, a broken button on a jacket are artifacts. In a Windows system, a person's actions can be traced quite accurately using forensics because of the various artifacts that a Windows system creates for a particular activity.  
 
 ## Is my computer spying on me?  
 A Windows system keeps this track to improve the user's experience (At least that's what they say). Forensic investigators also use this tracked data as artifacts to identify activity on a system.
@@ -50,7 +52,8 @@ Apart from these hives, two other hives containing user information can be found
 - NTUSER.DAT (mounted on `HKEY_CURRENT_USER` when a user logs in) hive is located in the directory `C:\Users\<username>\. 
 - USRCLASS.DAT (mounted on `HKEY_CURRENT_USER\Software\CLASSES`) hive is located in the directory `C:\Users\<username>\AppData\Local\Microsoft\Windows`   
 
-Of course, all of these hives are important, but we will examine a small part of them.  
+## What is Transaction Logs and Backups?  
+We can say that transaction logs are the change log of the registry hive. Windows often uses transaction logs when writing data to registry hives. This means that the transaction logs can often have the latest changes in the registry.
 
 ### UserAssist  
 **User Assist** registry keys keep a record of applications started by the user. Information such as the programs launched, when they were launched and how many times they were run. And the User Assist key is present in the NTUSER hive. We can find it in `NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist\{GUID}\Count`.  

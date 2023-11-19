@@ -81,7 +81,11 @@ We can check `SYSTEM\CurrentControlSet\Control\TimeZoneInformation` to find the 
 ### Network Interfaces and Past Networks  
 The `SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces` registry key will give a list of network interfaces on the machine.  
 
-💡 **Tip: The past networks connected to the machine can be found in `SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged` and `SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Managed`.**  
+💡 **Tip: The past networks connected to the machine can be found in the following location:  
+```
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Managed
+```
 
 ### Autostart Programs (Autoruns)  
 The following registry keys include information about programs or commands that run when a user logs on.   

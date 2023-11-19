@@ -178,5 +178,12 @@ The device name of the connected drive can be found at the following location:
 📝 **Note: We can compare the GUID in this registry key with the Disk ID specified in the device definition to associate names with unique devices.**  
 
 ### What is NTFS file system?  
+File Allocation Table (FAT) is one of the default file systems for Microsoft Operating Systems, at least until the late 1990s. However, FAT doesn't offer much for security, reliability and recovery capabilities. It also has certain limitations when it comes to file and volume sizes. Hence, Microsoft developed a newer file system called the New Technology File System (NTFS) to add these features.  
 
+### What is these features in NTFS?  
++ Journaling: The NTFS file system keeps a log of changes to the metadata in the volume. This feature helps the system recover from a crash. This log is stored in **$LOGFILE** in the volume's root directory.
++ Access Controls: The NTFS file system has access controls that define the owner of a file/directory and permissions for each user. FAT doesn't have these access controls.
++ Volume Shadow Copy: The NTFS file system keeps track of changes made to a file using a feature called Volume Shadow Copies. Using this feature, a user can restore previous file versions for recovery or system restore.  
+📝 **Note: Ransomware actors have been observed deleting shadow copies on file systems to prevent victims from recovering data.**
++ Alternate Data Streams:
 

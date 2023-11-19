@@ -4,31 +4,31 @@ title: "What is Forensics Artifacts?"
 date: 2023-11-08 16:45:59 +0600
 ---  
 
-## What is DFIR?  
+### What is DFIR?  
 DFIR stands for Digital Forensics and Incident Response. This area covers the collection of forensic artifacts and helps Security Experts identify footprints left by an attacker.  
 
-## What is Artifacts?  
+### What is Artifacts?  
 📝 **Note:Forensic artifacts are important pieces of information about human activity.**  
 In computer forensics, these artifacts are pieces of evidence that point to an activity performed on a system.  
 
-## So, the artifacts actually is evidence relevant to the investigation?  
+### So, the artifacts actually is evidence relevant to the investigation?  
 No, it may or may not be related to the investigation.  
 
-## How???  
+### How???  
 Briefly, artifacts are objects that have a forensic value. It can be any object that contains some data or evidence of something that happened. We actually collect artifacts to support a hypothesis or claim about the attacker's activity. For example, at a crime scene, fingerprints, a broken button on a jacket are artifacts. In a Windows system, a person's actions can be traced quite accurately using forensics because of the various artifacts that a Windows system creates for a particular activity.  
 
-## Is my computer spying on me?  
+### Is my computer spying on me?  
 A Windows system keeps this track to improve the user's experience (At least that's what they say). Forensic investigators also use this tracked data as artifacts to identify activity on a system.
 
-## What is Windows Registry?  
+### What is Windows Registry?  
 The Windows Registry is a collection of databases that store low-level settings for Windows to use. And The Windows registry consists of Keys and Values. 
 -  **Registry Keys** are the folders you see in the regedit.exe utility.  
 -  **Registry Values** are the data stored in these Registry Keys.  
 
-## Windows hive? What is that?  
+### Windows hive? What is that?  
 A **Registry Hive** is a group of Keys, subkeys and values stored in a single file on disk.  
 
-## Structure of the Registry:
+### Structure of the Registry:
 - `HKEY_CURRENT_USER`
 - `HKEY_USERS`
 - `HKEY_LOCAL_MACHINE`
@@ -52,7 +52,7 @@ Apart from these hives, two other hives containing user information can be found
 - NTUSER.DAT (mounted on `HKEY_CURRENT_USER` when a user logs in) hive is located in the directory `C:\Users\<username>\. 
 - USRCLASS.DAT (mounted on `HKEY_CURRENT_USER\Software\CLASSES`) hive is located in the directory `C:\Users\<username>\AppData\Local\Microsoft\Windows`   
 
-## What is Transaction Logs and Backups?  
+### What is Transaction Logs and Backups?  
 We can say that ***transaction logs*** are the change log of the registry hive. Windows often uses transaction logs when writing data to registry hives. This means that the transaction logs can often have the latest changes in the registry that haven't made their way to the registry hives themselves. The transaction log for each hive is stored as a .LOG file in the same directory as the hive itself (like `SAM.LOG`). If there are multiple transaction logs, their extensions can be **.LOG1**, **.LOG2**. ***Registry backups*** are backups of registry hives located in the `C:\Windows\system32\config` directory. These hives are copied to the `C:\Windows\system32\config\RegBack` directory every ten days. Registry backups can be an excellent place to look for some registry keys that may have been deleted/modified.  
 
 📝 **Note:You can use a live system or an image of the system to perform a forensic examination.**  
@@ -92,6 +92,29 @@ SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
 SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
 SOFTWARE\Microsoft\Windows\CurrentVersion\Run
 ```
+📝 **Note: `SYSTEM\CurrentControlSet\Services` contains information about services. For example, look at the screenshot below.**  
+
+![Services](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/4c21ac10-117d-4bc5-800d-59dbdbaece1e)  
+
+In this registry key, if the start key is set to `0x02`, this means that this service will start at boot.
+
+### SAM hive  
+The SAM hive contains user account information, login information, and group information. This information is mainly located in `SAM\Domains\Account\Users`.  
+
+### Recent Files  
+Windows keeps a list of recently opened files for each user. This information is stored inside `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs`.  
+
+### ShellBags  
+When any user opens a folder, it opens in a specific layout. Windows stores this information and can determine the Most Recently Used files and folders. We can find this information on the following locations:  
+```
+USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\Bags
+USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\BagMRU
+NTUSER.DAT\Software\Microsoft\Windows\Shell\BagMRU
+NTUSER.DAT\Software\Microsoft\Windows\Shell\Bags
+```  
+📝 **Note: Registry Explorer doesn't give us much information about ShellBags. You can also use another tool by Eric Zimmerman called ShellBag Explorer.**  
+
+### Open/Save and LastVisited Dialog MRUs  
 
 
 ### UserAssist  

@@ -132,13 +132,23 @@ NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
 ```
 
 ### UserAssist  
-**User Assist** registry keys keep a record of applications started by the user. Information such as the programs launched, when they were launched and how many times they were run. And the User Assist key is present in the NTUSER hive. We can find it in `NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist\{GUID}\Count`.  
+**User Assist** registry keys keep a record of applications started by the user. Information such as the programs launched, when they were launched and how many times they were run.  
+
+📝 **Note: However, programs that were run using the command line can't be found in the User Assist keys.**  
+
+And the User Assist key is present in the NTUSER hive. We can find it in `NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist\{GUID}\Count`.  
 
 ### ShimCache  
 **ShimCache** is a mechanism used to keep track of application compatibility with the OS. It is also called Application Compatibility Cache (AppCompatCache). We can find it in `SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache`.  
+ShimCache stores the filename, file size and last modified time of executables.  
+
+📝 **Note: Registry Explorer does not parse ShimCache data in a human-readable format, so we can use another tool called AppCompatCache Parser from Eric Zimmerman.**  
 
 ### AmCache  
-AmCache stores information of executed applications. These executed applications include the execution path, the time of first execution, the time of deletion and the initial installation. This hive is located in the file system at `C:\Windows\appcompat\Programs\Amcache.hve`.  
+AmCache stores information of executing applications, similar to Shimcache. This stored data includes execution path, installation, execution and deletion times, and SHA1 hashes of the executed programs. This hive is located in the file system at `C:\Windows\appcompat\Programs\Amcache.hve`.  
+
+### BAM/DAM  
+
 
 ### Device identification  
 The following locations keep a record of USB keys plugged into a system. These locations store the vendor ID, the product ID, the version of the USB device, and the time the devices were plugged into the system.  

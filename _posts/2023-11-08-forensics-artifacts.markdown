@@ -192,10 +192,9 @@ File Allocation Table (FAT) is one of the default file systems for Microsoft Ope
   + $LOGFILE: The $LOGFILE stores the transactional logging of the file system. It helps maintain the integrity of the file system in the event of a crash.
   + $UsnJrnl: It stands for the Update Sequence Number (USN) Journal. It is present in the $Extend record. It contains information about all the files that were changed in the file system and the reason for the change.  
 
-Let's use Eric Zimmerman's MFT Explorer tool.  
-
+## How to find artifacts present in the file system to perform forensic analysis?  
 ⚠️ ***Caution: From now we assume that we have a disk image for investigation.***  
-
+Let's use Eric Zimmerman's MFT Explorer tool.  
 ![MFT_AND OTHERS](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/1c634e30-5284-414c-81cb-c7d0dcf5e057)  
 ![MFT](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/220ee31c-3cdb-4a16-a242-257596394e06)  
 Then we get help from Eric Zimmerman's EZviewer tool.  
@@ -205,6 +204,22 @@ This is how the MFT file looks like.
 📝 **Note: Also, we can recover deleted files from a disk using Autopsy.**  
 
 ### Windows Prefetch files  
-Windows stores program information for future use. To load the program quickly in case of frequent use. This information is stored in `C:\Windows\Prefetch` directory. 
+Windows stores program information for future use. To load the program quickly in case of frequent use. This information is stored in `C:\Windows\Prefetch` directory. Prefetch files contain the last run times of the application, the number of times the application was run, and any files and device handles used by the file.  
+
+![prefetch](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/e21261b8-9860-4f4f-8b89-445df033f1f4)  
+![prefetch_output](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/bbc9f375-a932-454f-bf54-8c94172758ca)  
+
+### Windows 10 Timeline  
+Windows 10 stores recently used applications and files in a SQLite database. This database contains the executed application and the focus time of the application. The Windows 10 timeline can be found at the following location:  
+`C:\Users\<username>\AppData\Local\ConnectedDevicesPlatform\{randomfolder}\ActivitiesCache.db`  
+
+![timeline](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/ffc4108b-1ec7-436a-b203-b341f71a3b8d)  
+![timeline_output](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/a1467ea7-6eea-45da-84f9-40351dd94e0a)  
+
+### Windows Jump Lists  
+
+
+
+
 
 

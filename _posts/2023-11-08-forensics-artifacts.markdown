@@ -119,7 +119,17 @@ NTUSER.DAT\Software\Microsoft\Windows\Shell\Bags
 📝 **Note: Registry Explorer doesn't give us much information about ShellBags. You can also use another tool by Eric Zimmerman called ShellBag Explorer.**  
 
 ### Open/Save and LastVisited Dialog MRUs  
-
+When we open or save a file, a dialog box appears asking us where to save or open that file from. When we open or save a file in a specific location, Windows remembers that location. We can find these registry keys in the following location:
+```
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePIDlMRU
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU
+```
+### Windows Explorer Address/Search Bars  
+We can determine a user's recent activity by looking at paths typed in the Windows Explorer address bar or search terms entered in the Windows search bar. For this we can use the following location:
+```
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
+```
 
 ### UserAssist  
 **User Assist** registry keys keep a record of applications started by the user. Information such as the programs launched, when they were launched and how many times they were run. And the User Assist key is present in the NTUSER hive. We can find it in `NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist\{GUID}\Count`.  

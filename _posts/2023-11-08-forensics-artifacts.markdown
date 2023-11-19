@@ -192,4 +192,19 @@ File Allocation Table (FAT) is one of the default file systems for Microsoft Ope
   + $LOGFILE: The $LOGFILE stores the transactional logging of the file system. It helps maintain the integrity of the file system in the event of a crash.
   + $UsnJrnl: It stands for the Update Sequence Number (USN) Journal. It is present in the $Extend record. It contains information about all the files that were changed in the file system and the reason for the change.  
 
+Let's use Eric Zimmerman's MFT Explorer tool.  
+
+⚠️ ***Caution: From now we assume that we have a disk image for investigation.***  
+
+![MFT_AND OTHERS](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/1c634e30-5284-414c-81cb-c7d0dcf5e057)  
+![MFT](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/220ee31c-3cdb-4a16-a242-257596394e06)  
+Then we get help from Eric Zimmerman's EZviewer tool.  
+![MFT_output](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/3923c3ef-8e96-49f2-aa44-b726b2bcf1fc)  
+This is how the MFT file looks like.  
+
+📝 **Note: Also, we can recover deleted files from a disk using Autopsy.**  
+
+### Windows Prefetch files  
+Windows stores program information for future use. To load the program quickly in case of frequent use. This information is stored in `C:\Windows\Prefetch` directory. 
+
 

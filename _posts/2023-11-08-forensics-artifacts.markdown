@@ -104,9 +104,14 @@ In this registry key, if the start key is set to `0x02`, this means that this se
 
 ### SAM hive  
 The SAM hive contains user account information, login information, and group information. This information is mainly located in `SAM\Domains\Account\Users`.  
+![SAM](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/903080e4-0466-4e58-a175-76350dda582c)  
+
+Here we can see the user's relative identifier (RID), the user's login count, last login time, last failed login, last password change, password expiration, password policy and password hint, and the groups the user is part of.  
 
 ### Recent Files  
 Windows keeps a list of recently opened files for each user. This information is stored inside `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs`.  
+![RECENTFILES](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/9244e8d2-f014-430d-a0eb-79a984c70a42)  
+
 
 ### ShellBags  
 When any user opens a folder, it opens in a specific layout. Windows stores this information and can determine the Most Recently Used files and folders. We can find this information on the following locations:  
@@ -138,6 +143,10 @@ NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
 
 And the User Assist key is present in the NTUSER hive. We can find it in `NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist\{GUID}\Count`.  
 
+![userassist](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/35d42a8f-3e73-46f9-b3cc-a429a90ff978)   
+
+We mentioned UserAssist above. We can see the time when the application was started.
+
 ### ShimCache  
 **ShimCache** is a mechanism used to keep track of application compatibility with the OS. It is also called Application Compatibility Cache (AppCompatCache). We can find it in `SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache`.  
 ShimCache stores the filename, file size and last modified time of executables.  
@@ -155,21 +164,3 @@ The following locations keep a record of USB keys plugged into a system. These l
 - `SYSTEM\CurrentControlSet\Enum\USBSTOR`
 - `SYSTEM\CurrentControlSet\Enum\USB`  
 
-Now let's give some examples.  
-💡 Tip: I used Eric Zimmerman's Registry Explorer tool for this investigation.  
-
-First I examining `SAM` File.  
-![SAM](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/903080e4-0466-4e58-a175-76350dda582c)  
-
-Here we can see the user's relative identifier (RID), the user's login count, last login time, last failed login, last password change, password expiration, password policy and password hint, and the groups the user is part of.  
-
-![RECENTFILES](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/9244e8d2-f014-430d-a0eb-79a984c70a42)  
-
-### Recent Files  
-Windows maintains a list of recently opened files for each user. This information is stored in `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs`.  
-
-We can also look at the UserAssist location.  
-![userassist](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/35d42a8f-3e73-46f9-b3cc-a429a90ff978)  
-
-
-We mentioned UserAssist above. We can see the time when the application was started.

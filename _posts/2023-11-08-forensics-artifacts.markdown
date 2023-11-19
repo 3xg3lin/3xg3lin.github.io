@@ -192,7 +192,7 @@ File Allocation Table (FAT) is one of the default file systems for Microsoft Ope
   + $LOGFILE: The $LOGFILE stores the transactional logging of the file system. It helps maintain the integrity of the file system in the event of a crash.
   + $UsnJrnl: It stands for the Update Sequence Number (USN) Journal. It is present in the $Extend record. It contains information about all the files that were changed in the file system and the reason for the change.  
 
-## How to find artifacts present in the file system to perform forensic analysis?  
+## Where we can find the artifacts in the file system to perform forensic analysis?   
 ⚠️ ***Caution: From now we assume that we have a disk image for investigation.***  
 Let's use Eric Zimmerman's MFT Explorer tool.  
 ![MFT_AND OTHERS](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/1c634e30-5284-414c-81cb-c7d0dcf5e057)  
@@ -217,9 +217,35 @@ Windows 10 stores recently used applications and files in a SQLite database. Thi
 ![timeline_output](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/a1467ea7-6eea-45da-84f9-40351dd94e0a)  
 
 ### Windows Jump Lists  
+Jump lists are used to help users go directly to their recently used files from the taskbar. We can view jumplists by right-clicking an application's icon in the taskbar, and it will show us the recently opened files in that application. This data is stored in the following directory:  
+`C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations`  
 
+![jumplist](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/1353a509-0074-4892-85ea-73477f5afeed)  
+![jumplist_output](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/f20aa70a-beb8-439a-9b7f-b5131e5bd20e)  
 
+### Shortcut Files  
+Windows creates a shortcut file for each file opened either locally or remotely. The shortcut files contain information about the first and last opened times of the file and the path of the opened file, along with some other data. Shortcut files can be found in the following locations:   
+```
+C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Recent\
+C:\Users\<username>\AppData\Roaming\Microsoft\Office\Recent\
+```
+💡 **Tip: The creation date of the shortcut file points to the date/time when the file was first opened. The date/time of modification of the shortcut file points to the last time the file was accessed.**  
 
+### IE/Edge history  
+IE/Edge browsing history also includes files opened on the system, whether these files were opened using the browser or not. Therefore, IE/Edge history is a valuable resource for finding files opened on the system. We can access the history in the following location:  
+`C:\Users\<username>\AppData\Local\Microsoft\Windows\WebCache\WebCacheV*.dat`  
 
+📝 **Note: The files/folders accessed appear with a `file:///*` prefix in the IE/Edge history.** 
 
+![Autopsy1](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/10c98380-a2c2-498a-9d3f-180bdf724054)  
+![Autopsy2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/b246fd54-e448-4759-9274-7b24d8c0b805)  
+![Autopsy3](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/2a331e83-102d-4128-8332-a30acc6fbb58)  
+![Autopsy4](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/d1d76e13-019c-4ebe-b4ec-fdc80225d2e5)  
+
+### Setupapi dev logs for USB devices  
+When a new device is connected to a system, information about its installation is stored in the `setupapi.dev.log` file. This log is located in the following position:  
+`C:\Windows\inf\setupapi.dev.log`  
+This log contains the device serial number and the first/last time the device was connected.  
+
+![setupapi](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/be52a199-63f6-4a86-8d7e-39109a565969)  
 

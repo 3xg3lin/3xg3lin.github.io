@@ -157,10 +157,26 @@ ShimCache stores the filename, file size and last modified time of executables.
 AmCache stores information of executing applications, similar to Shimcache. This stored data includes execution path, installation, execution and deletion times, and SHA1 hashes of the executed programs. This hive is located in the file system at `C:\Windows\appcompat\Programs\Amcache.hve`.  
 
 ### BAM/DAM  
-
+BAM(**B**ackground **A**ctivity **M**onitor) tracks the activities of applications in the background. And DAM(**D**esktop **A**ctivity **M**oderator) is a part of Microsoft Windows that optimizes the power consumption of the device. The location of BAM and DAM is as follows:  
+```
+SYSTEM\CurrentControlSet\Services\bam\UserSettings\{SID}
+SYSTEM\CurrentControlSet\Services\dam\UserSettings\{SID}
+```  
+📝 **Note: This location contains information about last run programs, their full paths, and last execution time.**  
 
 ### Device identification  
 The following locations keep a record of USB keys plugged into a system. These locations store the vendor ID, the product ID, the version of the USB device, and the time the devices were plugged into the system.  
 - `SYSTEM\CurrentControlSet\Enum\USBSTOR`
 - `SYSTEM\CurrentControlSet\Enum\USB`  
+
+![USB](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0829e81f-7796-49ae-90b2-57aed03b597a)  
+
+### USB device Volume Name  
+The device name of the connected drive can be found at the following location:  
+`SOFTWARE\Microsoft\Windows Portable Devices\Devices`  
+
+📝 **Note: We can compare the GUID in this registry key with the Disk ID specified in the device definition to associate names with unique devices.**  
+
+### What is NTFS file system?  
+
 

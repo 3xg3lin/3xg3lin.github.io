@@ -53,7 +53,46 @@ Apart from these hives, two other hives containing user information can be found
 - USRCLASS.DAT (mounted on `HKEY_CURRENT_USER\Software\CLASSES`) hive is located in the directory `C:\Users\<username>\AppData\Local\Microsoft\Windows`   
 
 ## What is Transaction Logs and Backups?  
-We can say that ***transaction logs*** are the change log of the registry hive. Windows often uses transaction logs when writing data to registry hives. This means that the transaction logs can often have the latest changes in the registry that haven't made their way to the registry hives themselves. The transaction log for each hive is stored as a .LOG file in the same directory as the hive itself (like `SAM.LOG`). If there are multiple transaction logs, their extensions can be **.LOG1**, **.LOG2**. ***Registry backups*** are backups of registry hives located in the `C:\Windows\system32\config` directory. These hives are copied to the `C:\Windows\system32\config\RegBack` directory every ten days. Registry backups can be an excellent place to look for some registry keys that may have been deleted/modified.
+We can say that ***transaction logs*** are the change log of the registry hive. Windows often uses transaction logs when writing data to registry hives. This means that the transaction logs can often have the latest changes in the registry that haven't made their way to the registry hives themselves. The transaction log for each hive is stored as a .LOG file in the same directory as the hive itself (like `SAM.LOG`). If there are multiple transaction logs, their extensions can be **.LOG1**, **.LOG2**. ***Registry backups*** are backups of registry hives located in the `C:\Windows\system32\config` directory. These hives are copied to the `C:\Windows\system32\config\RegBack` directory every ten days. Registry backups can be an excellent place to look for some registry keys that may have been deleted/modified.  
+
+📝 **Note:You can use a live system or an image of the system to perform a forensic examination.**  
+💡 **Tip:If we want to copy the registry hives from %WINDIR%\System32\Config, we cannot because it is a restricted file. For this you can use KAPE,FTK imager (FTK imager will not copy the Amcache.hve file) tools. In this case, we will use [Eric Zimmerman's tools](https://ericzimmerman.github.io/#!index.md) for live analysis.**  
+
+### OS Version  
+We can use the registry key `SOFTWARE\Microsoft\Windows NT\CurrentVersion` to find the operating system version.  
+
+### Current control set  
+Control sets are configuration data used to control the startup of the system. Usually we see two Control Sets, ControlSet001 points to the Control Set the machine booted with, and ControlSet002 is the last known good configuration. Their locations will be:  
++ SYSTEM\ControlSet001
++ SYSTEM\ControlSet002
+
+And Windows creates a temporary Control Set called CurrentControlSet (`HKLM\SYSTEM\CurrentControlSet`) when the machine is alive.  
+We can find out which Control Set is used as CurrentControlSet by checking `SYSTEM\Select\Current`.  
+Similarly, the `SYSTEM\Select\LastKnownGood` configuration can also be found.  
+
+![CurrentControlSet](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/8fb250ba-7968-4b30-bac2-154921b460f1)  
+
+### Computer Name  
+We can find the Computer Name from `SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName`.  
+
+### Time Zone Information  
+We can check `SYSTEM\CurrentControlSet\Control\TimeZoneInformation` to find the Time Zone Information.  
+
+### Network Interfaces and Past Networks  
+The `SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces` registry key will give a list of network interfaces on the machine.  
+
+💡 **Tip: The past networks connected to the machine can be found in `SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged` and `SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Managed`.**  
+
+### Autostart Programs (Autoruns)  
+The following registry keys include information about programs or commands that run when a user logs on.   
+```
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\RunOnce
+SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
+SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+```
+
 
 ### UserAssist  
 **User Assist** registry keys keep a record of applications started by the user. Information such as the programs launched, when they were launched and how many times they were run. And the User Assist key is present in the NTUSER hive. We can find it in `NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist\{GUID}\Count`.  

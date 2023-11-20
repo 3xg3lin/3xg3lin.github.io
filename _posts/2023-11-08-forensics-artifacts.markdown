@@ -185,7 +185,7 @@ File Allocation Table (FAT) is one of the default file systems for Microsoft Ope
 + Access Controls: The NTFS file system has access controls that define the owner of a file/directory and permissions for each user. FAT doesn't have these access controls.
 + Volume Shadow Copy: The NTFS file system keeps track of changes made to a file using a feature called Volume Shadow Copies. Using this feature, a user can restore previous file versions for recovery or system restore.  
 📝 **Note: Ransomware actors have been observed deleting shadow copies on file systems to prevent victims from recovering data.**
-+ Alternate Data Streams: A file is a stream of data organized in a file system. 
++ Alternate Data Streams: A file is a stream of data organized in a file system.  
 📝 Note: Every file on the NTFS platform has at least one data stream, this is the default data stream, but it is possible for files to have more than one stream. Additional streams are known as alternate data streams.
 + Master File Table: Like the File Allocation Table, but MFT is much more comprehensive than that. It is a structured database that keeps track of objects stored in a volume. This means that NTFS file system data is organized in the Master File Table. For forensic analysis, some of the critical files in the MFT are:
   + $MFT: The Volume Boot Record (VBR) points to the cluster where it is located. $MFT stores information about the clusters where all other objects present on the volume are located.

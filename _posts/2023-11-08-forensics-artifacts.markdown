@@ -49,7 +49,7 @@ The majority of these hives are located in the `C:\Windows\system32\config` dire
 
 Apart from these hives, two other hives containing user information can be found in the User profile directory.  
 
-- NTUSER.DAT (mounted on `HKEY_CURRENT_USER` when a user logs in) hive is located in the directory `C:\Users\<username>\. 
+- NTUSER.DAT (mounted on `HKEY_CURRENT_USER` when a user logs in) hive is located in the directory `C:\Users\<username>\`. 
 - USRCLASS.DAT (mounted on `HKEY_CURRENT_USER\Software\CLASSES`) hive is located in the directory `C:\Users\<username>\AppData\Local\Microsoft\Windows`   
 
 ### What is Transaction Logs and Backups?  

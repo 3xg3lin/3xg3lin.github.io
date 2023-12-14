@@ -263,7 +263,19 @@ For additional information see DMARC resources [here](https://dmarcian.com/what-
 
 Let's use the Domain Health Checker at [dmarcian.com](https://dmarcian.com/domain-checker/) and check the DMARC status of adeo.com.tr.  
 
-![adeoooo](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/41856d38-a7bc-4cd5-ad8d-40aa517cd5fe)  
+![test](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/55b4a4ba-f75c-4d4e-8eab-5d764a66df69)  
+
+What is [S/MIME](https://docs.microsoft.com/en-us/exchange/security-and-compliance/smime-exo/smime-exo)?  
+According to Microsoft, "S/MIME (Secure/Multipurpose internet Mail Extensions) is a widely accepted protocol for sending digitally signed and encrypted messages."  
+
+The 2 main components for S/MIME are: 
+- Digital Signatures
+- Encryption
+
+S/MIME guarantees data integrity and non-repudiation using Public Key Cryptography.  
+![encrypt](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/329402cb-836d-43fe-8a67-5410218cd9eb)  
+
+
 
 
 

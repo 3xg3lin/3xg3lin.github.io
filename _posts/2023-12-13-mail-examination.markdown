@@ -74,9 +74,7 @@ Above image is _text-only_ email.
 Above image is HTML formatted email. And contains an image (which was blocked by the email client) and embedded hyperlinks.  
 You can view an email's HTML code similar method.  
 Image below is from Protonmail.  
-
-![email-source-code-2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/d2b23ec3-08e3-4a10-83cc-d6618655ceea)  
-
+![email-source-code-2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/25845a94-8a67-4bca-94af-d2075840df55)  
 
 
 

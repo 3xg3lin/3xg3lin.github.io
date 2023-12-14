@@ -219,6 +219,9 @@ Some examples of these tactics are listed below:
 
 According to the MITRE ATT&CK Framework, [Phishing for Information](https://attack.mitre.org/techniques/T1598/) is defined as an attempt to disclose information by deceiving targets and includes four sub-techniques.  
 
+![mitreattack](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/dc5121c6-fb4b-4ad1-92a2-b9d05a231b3a)  
+
+
 What is the Sender Policy Framework (SPF)?  
 According to [dmarcian](https://dmarcian.com/what-is-spf/), "The Sender Policy Framework (SPF) is used to authenticate the sender of an email. When an SPF record exists, Internet Service Providers can verify that a mail server is authorized to send email for a specific domain. An SPF record is a DNS TXT record that contains a list of IP addresses that are authorized to send email on behalf of your domain."
 
@@ -274,8 +277,4 @@ The 2 main components for S/MIME are:
 
 S/MIME guarantees data integrity and non-repudiation using Public Key Cryptography.  
 ![encrypt](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/329402cb-836d-43fe-8a67-5410218cd9eb)  
-
-
-
-
 

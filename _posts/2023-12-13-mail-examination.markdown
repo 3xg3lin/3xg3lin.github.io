@@ -189,8 +189,23 @@ First, you need to obtain the attachment securely. Then you can get its hash. An
 **[Talos File Reputation](https://talosintelligence.com/talos_file_reputation)**  
 According to the site, "The Cisco Talos Intelligence Group maintains a reputation trend over billions of files. This reputation system feeds into the AMP, FirePower, ClamAV and Open Source Snort product lines. The following tool allows you to perform mundane searches against the Talos File Reputation system. This system limits you to one search at a time and is limited to hash matching only. This search does not reflect the full capabilities of the Advanced Malware Protection (AMP) system".  
 
-**[VirusTotal](https://www.virustotal.com/gui/)  
+**[VirusTotal](https://www.virustotal.com/gui/)**  
 According to the site, "Analyze suspicious files and URLs to detect malware types, automatically sharing them with the security community."  
+
+### Malware Sandbox  
+
+There are online tools and services where malicious files can be uploaded and analyzed to better understand what the malware was programmed to do. These services are known as malware sandboxes.  
+
+**[Any.Run](https://app.any.run/)**  
+According to the site, "Analyze a network, file, module and registry activity. Interact with the operating system directly from a browser. Instantly see feedback from your actions".  
+
+**[Hybrid Analysis](https://www.hybrid-analysis.com/)**  
+According to the site, "This is a free malware analysis service for the community that detects and analyzes unknown threats using a unique Hybrid Analysis technology."  
+
+**[Joesecurity](https://www.joesecurity.org/)**  
+According to the site, "Joe Sandbox empowers analysts with a wide range of product features. These include: Live Interaction, URL Analysis and AI-based Phishing Detection, Wound and Sigma rules support, MITRE ATT&CK matrix, AI-based malware detection, Mail Monitor, Threat Hunting and Intelligence, Automated User Behavior, Dynamic VBA/JS/JAR instrumentation, Execution Graphs, Localized Internet Anonymization and much more".  
+
+💡 Tip: Another tool to help with automated phishing analysis is [PhishTool](https://www.phishtool.com/).  
 
 
 

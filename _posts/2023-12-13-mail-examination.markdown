@@ -235,6 +235,8 @@ An explanation for the above record:
 
 See SPF Record Syntax in dmarcian [here](https://dmarcian.com/spf-syntax-table/)  
 
+💡 Tip: You can use dmarcian's [SPF Surveyor](https://dmarcian.com/spf-survey/) tool for SPF recording.  
+
 ![spf](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0b68fb51-6717-40c8-9565-1231dd25d323)  
 The image above shows the SPF record of a malicious email.  
 

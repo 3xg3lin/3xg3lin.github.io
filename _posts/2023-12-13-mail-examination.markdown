@@ -56,6 +56,8 @@ Now let's look email details.
 ⚠️ **Warning:Don't engage/interact with the email addresses or IP addresses.**  
 
 ![email-raw-headers-menu-2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/87374bcb-ece4-46fe-bfb0-70c917044649)  
+![email-raw-headers-2b](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/2d481b96-9f2b-4d1d-8e28-c447ac6df7b1)
+
 
 From the above image, there are other email header fields of interest.   
 - X-Originating-IP - The IP address of the email was sent from (this is known as an X-header)

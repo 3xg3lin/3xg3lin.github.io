@@ -49,5 +49,15 @@ Let's start with the following email header fields:
 - To - the recipient's email address
 
 
-![email-headers-1b](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/267042ae-3a56-4522-a56d-c2b01bb0840d)
+![email-headers-1b](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/267042ae-3a56-4522-a56d-c2b01bb0840d)  
+
+Now let's look email details.  
+📝 **Note: Displaying raw/full email headers in various email clients may be different. For this, visit this [link](https://mediatemple.zendesk.com/hc/en-us/articles/204644060-how-do-i-view-email-headers-for-a-message).  
+
+![email-raw-headers-menu-2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/87374bcb-ece4-46fe-bfb0-70c917044649)  
+
+
+
+
+
 

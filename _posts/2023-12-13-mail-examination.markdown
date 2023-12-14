@@ -35,4 +35,19 @@ POP3 and IMAP looks the same. But there are differences between the two.
 
 ![email-network-flow](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/6206f25a-a95e-4b14-90d5-591d0dea4418)  
 
+## what makes up an email message?  
+There are two parts to an email:  
+-  the email header (information about the email, such as the email servers that relayed the email)
+-  the email body (text and/or HTML formatted text)
+
+📝 **Note:The syntax for email messages is known as the Internet Message Format (IMF).**
+
+Let's start with the following email header fields:  
+- From - the sender's email address
+- Subject - the email's subject line
+- Date - the date when the email was sent
+- To - the recipient's email address
+
+
+![email-headers-1b](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/267042ae-3a56-4522-a56d-c2b01bb0840d)
 

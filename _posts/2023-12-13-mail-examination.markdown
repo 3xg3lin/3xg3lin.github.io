@@ -93,5 +93,34 @@ we can see the headers associated with this attachment:
 - Content-Disposition specifies it's an attachment.
 - Content-Transfer-Encoding tells us it's base64 encoded
 
+Briefly explain the different types of malicious emails:
+- Spam - unwanted junk emails sent in bulk to a large number of recipients.
+- Phishing - Emails sent to the target(s) pretending to be from a trusted organization in order to persuade individuals to provide sensitive information.
+- Spear phishing - takes phishing a step further by targeting a specific individual(s) or organization seeking sensitive information.
+- Whaling - similar to spear phishing, but specifically targeting people in high C-Level positions (CEO, CFO, etc.) and the goal is the same.
+- Smishing - takes phishing to mobile devices by targeting mobile users with specially crafted text messages.
+- Vishing - is similar to smishing, but instead of using text messages for the social engineering attack, the attacks are based on voice calls.
+
+So what is this special feature of these phishing emails?
+- Sender email name/address will appear to be a trusted entity (email spoofing)
+- The email subject line and/or body (text) is written with a sense of urgency or uses specific keywords such as Invoice, Suspended, etc.
+- The email body (HTML) is designed to match a trusted organization (like Amazon)
+- Email body (HTML) is poorly formatted or written.
+- The email body uses generic content, such as Dear Sir/Madam.
+- Hyperlinks (often using URL shortening services to hide their true source)
+- A malicious attachment masquerading as a legitimate document.
+
+📝 **Note: Hyperlinks and IP addresses should be 'defanged'.  
+💡 **Tip: Defanging is a way of making the URL/domain or email address unclickable to avoid accidental clicks.  
+
+Sometimes you may come across links that use URL shortening services.  
+In this case, you can use a URL extender like the one on this [site](https://linkunshorten.com).  
+
+Additional Resources:
+- https://www.knowbe4.com/phishing
+- https://www.itgovernance.co.uk/blog/5-ways-to-detect-a-phishing-email
+- https://cheapsslsecurity.com/blog/10-phishing-email-examples-you-need-to-see/
+- https://phishingquiz.withgoogle.com
+
 
 

@@ -207,5 +207,63 @@ According to the site, "Joe Sandbox empowers analysts with a wide range of produ
 
 💡 Tip: Another tool to help with automated phishing analysis is [PhishTool](https://www.phishtool.com/).  
 
+### What tactics can we use as a defender to protect users from falling victim to a malicious email?  
+Some examples of these tactics are listed below:  
+- Email Security (SPF, DKIM, DMARC)
+- SPAM Filters (flags or blocks incoming emails based on reputation)
+- Email Labels (alert users that an incoming email is from an outside source)
+- Email Address/Domain/URL Blocking (based on reputation or explicit denylist)
+- Attachment Blocking (based on the extension of the attachment)
+- Attachment Sandboxing (detonating email attachments in a sandbox environment to detect malicious activity)
+- Security Awareness Training (internal phishing campaigns)
+
+According to the MITRE ATT&CK Framework, [Phishing for Information](https://attack.mitre.org/techniques/T1598/) is defined as an attempt to disclose information by deceiving targets and includes four sub-techniques.  
+
+What is the Sender Policy Framework (SPF)?  
+According to [dmarcian](https://dmarcian.com/what-is-spf/), "The Sender Policy Framework (SPF) is used to authenticate the sender of an email. When an SPF record exists, Internet Service Providers can verify that a mail server is authorized to send email for a specific domain. An SPF record is a DNS TXT record that contains a list of IP addresses that are authorized to send email on behalf of your domain."
+
+How does a basic SPF record look like?  
+`v=spf1 ip4:127.0.0.1 include:_spf.google.com -all`  
+An explanation for the above record:
+- `v=spf1`-> This is the start of the SPF record.
+- `ip4:127.0.0.1`-> This specifies which IP (in this case version IP4 & not IP6) can send mail
+- `include:_spf.google.com`-> This specifies which domain can send mail
+- `-all`-> non-authorized emails will be rejected
+
+See SPF Record Syntax in dmarcian [here](https://dmarcian.com/spf-syntax-table/)  
+
+![spf](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0b68fb51-6717-40c8-9565-1231dd25d323)  
+The image above shows the SPF record of a malicious email.  
+
+What is DKIM?  
+According to [dmarcian](https://dmarcian.com/what-is-dkim/), "DKIM stands for DomainKeys Identified Mail and is used for authentication of a sent email. Like SPF, DKIM is an open standard for email authentication used for DMARC alignment. A DKIM record exists in DNS, but it is slightly more complex than SPF. The advantage of DKIM is that it can survive redirection, which makes it superior to SPF and provides a basis for securing your email."  
+
+How does a DKIM record look like?  
+```
+v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxTQIC7vZAHHZ7WVv/5x/qH1RAgMQI+y6Xtsn73rWOgeBQjHKbmIEIlgrebyWWFCXjmzIP0NYJrGehenmPWK5bF/TRDstbM8uVQCUWpoRAHzuhIxPSYW6k/w2+HdCECF2gnGmmw1cT6nHjfCyKGsM0On0HDvxP8I5YQIIlzNigP32n1hVnQP+UuInj0wLIdOBIWkHdnFewzGK2+qjF2wmEjx+vqHDnxdUTay5DfTGaqgA9AKjgXNjLEbKlEWvy0tj7UzQRHd24a5+2x/R4Pc7PF/y6OxAwYBZnEPO0sJwio4uqL9CYZcvaHGCLOIMwQmNTPMKGC9nt3PSjujfHUBX3wIDAQAB
+```
+An explanation of the above record:  
+- `v=DKIM1`-> This is the version of the DKIM record. This is optional.
+- `k=rsa`-> This is the key type. The default value is RSA. RSA is an encryption algorithm.
+- `p=`-> This is the public key that will be matched to the private key, which was created during the DKIM setup process.
+
+For additional information see the DKIM resource [here](https://dmarcian.com/dkim-selectors/) and [here](https://knowledge.validity.com/hc/en-us/articles/222481088-DKIM-DNS-record-overview)  
+
+What is DMARC?  
+According to dmarcian, "DMARC (Domain-based Message Authentication Reporting, & Conformance), an open source standard, uses a concept called alignment to tie the result of two other open source standards, SPF (a published list of servers authorized to send email on behalf of a domain) and DKIM (a tamper-evident domain seal associated with a piece of email), to the content of an email. If not already set up, putting a DMARC record for your domain will provide feedback that will allow you to troubleshoot your SPF and DKIM configurations if needed."  
+
+How does a basic DMARC record look like?  
+`v=DMARC1; p=quarantine; rua=mailto:postmaster@test.com`  
+An explanation of the above record:  
+- `v=DMARC1`-> Must be capitalized and is not optional
+- `p=quarantine`-> If a check fails, then an email will be sent to the spam folder (DMARC Policy)
+- `rua=mailto:postmaster@test.com`->  Aggregate reports will be sent to this email address
+
+For additional information see DMARC resources [here](https://dmarcian.com/what-is-a-dmarc-record/) and [here](https://dmarc.org/overview/). See the resource below about DMARC [Alignment](https://dmarcian.com/alignment/).  
+
+Let's use the Domain Health Checker at [dmarcian.com](https://dmarcian.com/domain-checker/) and check the DMARC status of adeo.com.tr.  
+
+![adeoooo](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/41856d38-a7bc-4cd5-ad8d-40aa517cd5fe)  
+
 
 

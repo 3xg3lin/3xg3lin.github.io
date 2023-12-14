@@ -122,5 +122,32 @@ Additional Resources:
 - https://cheapsslsecurity.com/blog/10-phishing-email-examples-you-need-to-see/
 - https://phishingquiz.withgoogle.com
 
+Below is a checklist of what information an analyst should collect from the email header (aka artifacts):  
+- Sender email address
+- Sender IP address
+- Reverse lookup of the sender IP address
+- Email subject line
+- Recipient email address (this information might be in the CC/BCC field)
+- Reply-to email address (if any)
+- Date/time
+
+Below is a checklist of the artifacts an analystb needs to collect from the email body:  
+- Any URL links (if an URL shortener service was used, then we'll need to obtain the real URL link)
+- The name of the attachment
+- The hash value of the attachment (hash type MD5 or SHA256)
+
+After all this, let's continue with what kind of tool we should use when analyzing.  
+###  Email header analysis  
+**[Messageheader](https://toolbox.googleapps.com/apps/messageheader/analyzeheader)**
+According to the [site](https://toolbox.googleapps.com/apps/main/), "Messageheader analyzes SMTP message headers that help identify the root cause of delivery delays. You can detect misconfigured servers and mail routing problems".  
+Usage: Copy and paste the entire email header and run the analysis tool.  
+**[Message Header Analyzer](https://mha.azurewebsites.net/)**  
+This is another tool for mail analysis.  
+**[Mailheader](https://mailheader.org/)**  
+You can also use this online tool.  
+📝 Note: **Message Transfer Agent** ([MTA](https://csrc.nist.gov/glossary/term/mail_transfer_agent)) is software that transfers emails between sender and recipient.  
+
+
+
 
 

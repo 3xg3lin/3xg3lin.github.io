@@ -86,5 +86,12 @@ Lastly, emails may contain attachments. You can view an email's attachment from 
 - The email attachment is a PDF document.
 
 Let's view this attachment within the source code.  
+![email-with-attachment-2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/0b52c899-4b1c-4f17-b2b2-af7d3417c9b6)  
+
+we can see the headers associated with this attachment:  
+- Content-Type is application/pdf.
+- Content-Disposition specifies it's an attachment.
+- Content-Transfer-Encoding tells us it's base64 encoded
+
 
 

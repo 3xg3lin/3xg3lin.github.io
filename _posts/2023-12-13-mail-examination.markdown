@@ -137,10 +137,11 @@ Below is a checklist of the artifacts an analystb needs to collect from the emai
 - The hash value of the attachment (hash type MD5 or SHA256)
 
 After all this, let's continue with what kind of tool we should use when analyzing.  
-###  Email header analysis  
+###  Email header analysis   
+
 **[Messageheader](https://toolbox.googleapps.com/apps/messageheader/analyzeheader)**
 According to the [site](https://toolbox.googleapps.com/apps/main/), "Messageheader analyzes SMTP message headers that help identify the root cause of delivery delays. You can detect misconfigured servers and mail routing problems".  
-Usage: Copy and paste the entire email header and run the analysis tool.  
+📖 Usage: Copy and paste the entire email header and run the analysis tool.  
 
 **[Message Header Analyzer](https://mha.azurewebsites.net/)**  
 This is another tool for mail analysis.  
@@ -163,7 +164,33 @@ According to the site, "Talos' Reputation Center provides access to comprehensiv
 
 📝 **Note: If you don't want to explicitly go to the URL, you can use tools like [URL2PNG](https://www.url2png.com/) and [Wannabrowser](https://www.wannabrowser.net/)**.  
 
+### Email body analysis  
 
+Malicious payload may be delivered to the recipient either as a link or an attachment.  
+Links can be extracted manually, either directly from an HTML formatted email or by sifting through the raw email header.  
+
+Below is an example of obtaining a link manually from an email by right-clicking the link and choosing Copy Link Location.  
+
+![copy-link](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/d1164781-1768-4d9c-adcd-f2e3ec9c43e9)  
+
+The same can be accomplished with [URL Extractor tool](https://www.convertcsv.com/url-extractor.htm).  
+📖 Usage: Copy the raw header and paste it into the "Step 1: Select your input" text box.  
+
+You can also use [CyberChef](https://gchq.github.io/CyberChef/) to extract URLs.  
+![a31606afb772b8f87eebf0ff59f00fce](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/8b862e4a-fec2-4772-a95c-30495b50a5a9)  
+
+💡 Tip: It's important to note the root domain for the extracted URLs. You will need to perform an analysis on the root domain as well.  
+
+After extracting the URLs, the next step is to check the reputation of the URLs and root domain.  
+
+What if the email has an attachment?  
+First, you need to obtain the attachment securely. Then you can get its hash. And then you can check the reputation of the file against the hash to see if it is a known malicious document.  
+
+**[Talos File Reputation](https://talosintelligence.com/talos_file_reputation)**  
+According to the site, "The Cisco Talos Intelligence Group maintains a reputation trend over billions of files. This reputation system feeds into the AMP, FirePower, ClamAV and Open Source Snort product lines. The following tool allows you to perform mundane searches against the Talos File Reputation system. This system limits you to one search at a time and is limited to hash matching only. This search does not reflect the full capabilities of the Advanced Malware Protection (AMP) system".  
+
+**[VirusTotal](https://www.virustotal.com/gui/)  
+According to the site, "Analyze suspicious files and URLs to detect malware types, automatically sharing them with the security community."  
 
 
 

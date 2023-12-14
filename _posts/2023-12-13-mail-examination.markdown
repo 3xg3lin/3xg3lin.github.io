@@ -53,10 +53,29 @@ Let's start with the following email header fields:
 
 Now let's look email details.  
 📝 **Note: Displaying raw/full email headers in various email clients may be different. For this, visit this [link](https://mediatemple.zendesk.com/hc/en-us/articles/204644060-how-do-i-view-email-headers-for-a-message)**.  
+⚠️ **Warning:Don't engage/interact with the email addresses or IP addresses.**  
 
 ![email-raw-headers-menu-2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/87374bcb-ece4-46fe-bfb0-70c917044649)  
 
+From the above image, there are other email header fields of interest.   
+- X-Originating-IP - The IP address of the email was sent from (this is known as an X-header)
+- Smtp.mailfrom/header.from - The domain the email was sent from (these headers are within Authentication-Results)
+- Reply-To - This is the email address a reply email will be sent to instead of the From email address
 
+[Here](https://mediatemple.zendesk.com/hc/en-us/articles/204643950-understanding-an-email-header) is an example from Media Temple on how to analyze emails.  
+
+Now it's time to analyze the body of an email.  
+The email body is the part of the email which contains the text (plain or HTML formatted) the sender wants you to view.  
+
+![email-text-2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/28d6aaa0-dbdd-4a74-bbd3-0abc9e94b6cc)  
+Above image is _text-only_ email.  
+
+![mail](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/5114f88e-4bcd-4d73-9f94-f6fe8a1c95bf)  
+Above image is HTML formatted email. And contains an image (which was blocked by the email client) and embedded hyperlinks.  
+You can view an email's HTML code similar method.  
+Image below is from Protonmail.  
+
+![email-source-code-2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/d2b23ec3-08e3-4a10-83cc-d6618655ceea)  
 
 
 

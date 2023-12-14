@@ -79,5 +79,12 @@ You can view an email's HTML code similar method.
 Image below is from Protonmail.  
 ![email-source-code-2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/25845a94-8a67-4bca-94af-d2075840df55)  
 
+Lastly, emails may contain attachments. You can view an email's attachment from an email's HTML format or by viewing the source code.  
+
+![email-with-attachment](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/dd793ab5-52ff-4a98-ad33-5b94669b23bf)  
+- The email body has an image.
+- The email attachment is a PDF document.
+
+Let's view this attachment within the source code.  
 
 

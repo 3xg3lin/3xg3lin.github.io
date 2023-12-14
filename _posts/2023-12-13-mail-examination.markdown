@@ -53,7 +53,7 @@ Let's start with the following email header fields:
 
 Now let's look email details.  
 📝 **Note: Displaying raw/full email headers in various email clients may be different. For this, visit this [link](https://mediatemple.zendesk.com/hc/en-us/articles/204644060-how-do-i-view-email-headers-for-a-message)**.  
-⚠️ **Warning:Don't engage/interact with the email addresses or IP addresses.**  
+⚠️ **Warning: Don't engage/interact with the email addresses or IP addresses.**  
 
 ![email-raw-headers-menu-2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/87374bcb-ece4-46fe-bfb0-70c917044649)  
 ![email-raw-headers-2b](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/2d481b96-9f2b-4d1d-8e28-c447ac6df7b1)
@@ -131,7 +131,7 @@ Below is a checklist of what information an analyst should collect from the emai
 - Reply-to email address (if any)
 - Date/time
 
-Below is a checklist of the artifacts an analystb needs to collect from the email body:  
+Below is a checklist of artifacts that an analyst should collect from the email body:  
 - Any URL links (if an URL shortener service was used, then we'll need to obtain the real URL link)
 - The name of the attachment
 - The hash value of the attachment (hash type MD5 or SHA256)

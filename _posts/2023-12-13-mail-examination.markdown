@@ -69,8 +69,9 @@ The email body is the part of the email which contains the text (plain or HTML f
 
 ![email-text-2](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/28d6aaa0-dbdd-4a74-bbd3-0abc9e94b6cc)  
 Above image is _text-only_ email.  
+![290545454-28d6aaa0-dbdd-4a74-bbd3-0abc9e94b6cc](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/909e02c1-0901-4a4b-89b0-ff611716045d)
 
-![mail](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/5114f88e-4bcd-4d73-9f94-f6fe8a1c95bf)  
+
 Above image is HTML formatted email. And contains an image (which was blocked by the email client) and embedded hyperlinks.  
 You can view an email's HTML code similar method.  
 Image below is from Protonmail.  

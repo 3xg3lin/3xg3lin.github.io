@@ -33,4 +33,6 @@ POP3 and IMAP looks the same. But there are differences between the two.
 > - Sent messages are stored on the server.  
 > - Messages can be synced and accessed across multiple devices.  
 
+![email-network-flow](https://github.com/3xg3lin/3xg3lin.github.io/assets/73038148/6206f25a-a95e-4b14-90d5-591d0dea4418)  
+
 

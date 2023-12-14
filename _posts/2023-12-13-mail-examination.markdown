@@ -110,8 +110,8 @@ So what is this special feature of these phishing emails?
 - Hyperlinks (often using URL shortening services to hide their true source)
 - A malicious attachment masquerading as a legitimate document.
 
-📝 **Note: Hyperlinks and IP addresses should be 'defanged'.  
-💡 **Tip: Defanging is a way of making the URL/domain or email address unclickable to avoid accidental clicks.  
+📝 **Note: Hyperlinks and IP addresses should be 'defanged'.**  
+💡 **Tip: Defanging is a way of making the URL/domain or email address unclickable to avoid accidental clicks.**  
 
 Sometimes you may come across links that use URL shortening services.  
 In this case, you can use a URL extender like the one on this [site](https://linkunshorten.com).  
